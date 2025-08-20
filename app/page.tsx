@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Camera, PenTool, Share2 } from "lucide-react"
+import { ArrowRight, Camera, PenTool, Share2, Mail } from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -11,37 +11,57 @@ export default function HomePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-6 bg-gradient-to-br from-secondary/20 via-background to-accent/10">
+      <section className="pt-24 pb-16 px-6 bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-50">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-in fade-in slide-in-from-left duration-700">
-              <div className="space-y-4">
-                <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                  Stories that{" "}
-                  <span className="text-primary bg-primary/10 px-3 py-2 rounded-xl inline-block">
-                    matter
+              <div className="space-y-6">
+                <h1 className="text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+                  Marissa{" "}
+                  <span className="text-transparent bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text">
+                    Conter
                   </span>
                 </h1>
-                <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-                  I'm Marissa Conter, a Seattle-based journalist uncovering the stories that connect us all.
-                </p>
+                
+                <div className="space-y-3">
+                  <h2 className="text-2xl lg:text-3xl font-semibold text-gray-700">
+                    Reporter
+                  </h2>
+                  <p className="text-xl text-gray-600 font-medium">
+                    Crime, Courts, Public Safety & More
+                  </p>
+                  <div className="flex items-center gap-3 text-lg font-semibold text-blue-600">
+                    <span className="w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></span>
+                    Kitsap Sun
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3 p-4 bg-white/80 backdrop-blur-sm rounded-2xl border border-blue-100 shadow-lg">
+                  <Mail className="h-5 w-5 text-blue-600" />
+                  <a 
+                    href="mailto:marissaconter@gmail.com" 
+                    className="text-lg text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                  >
+                    marissaconter@gmail.com
+                  </a>
+                </div>
               </div>
 
               <div className="flex gap-4">
-                <Button asChild size="lg" className="group">
+                <Button asChild size="lg" className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg">
                   <Link href="/work" className="flex items-center gap-2">
                     View My Work 
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg">
+                <Button asChild variant="outline" size="lg" className="border-blue-300 text-blue-700 hover:bg-blue-50">
                   <Link href="/about">About Me</Link>
                 </Button>
               </div>
             </div>
 
             <div className="relative animate-in fade-in slide-in-from-right duration-700 delay-300">
-              <div className="aspect-[4/5] relative overflow-hidden rounded-3xl shadow-2xl">
+              <div className="h-120 w-94 relative overflow-hidden rounded-3xl shadow-2xl ring-4 ring-white/50">
                 <Image
                   src="/kitsap-sun-headshot.jpg"
                   alt="Marissa Conter - Journalist"
@@ -49,12 +69,12 @@ export default function HomePage() {
                   className="object-cover transition-transform duration-700 hover:scale-105"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 via-transparent to-transparent" />
               </div>
               
               {/* Floating location badge */}
-              <div className="absolute -bottom-4 -right-4 bg-white/95 backdrop-blur-sm text-foreground p-4 rounded-2xl shadow-lg border border-white/20 animate-in zoom-in duration-500 delay-700">
-                <p className="text-sm font-semibold flex items-center gap-2">
+              <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white p-4 rounded-2xl shadow-xl border-4 border-white animate-in zoom-in duration-500 delay-700">
+                <p className="text-sm font-bold flex items-center gap-2">
                   📍 Seattle, WA
                 </p>
               </div>
@@ -64,20 +84,20 @@ export default function HomePage() {
       </section>
 
       {/* Featured Work Section */}
-      <section className="py-20 px-6 bg-gradient-to-r from-muted/30 via-secondary/5 to-primary/5">
+      <section className="py-20 px-6 bg-gradient-to-r from-orange-50 via-pink-50 to-rose-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom duration-700">
-            <h2 className="text-4xl font-bold text-foreground mb-6">
-              Featured Work
+            <h2 className="text-5xl font-bold text-gray-900 mb-6">
+              Featured <span className="text-transparent bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text">Work</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A glimpse into my recent journalism across different mediums
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Stories that impact communities across the Pacific Northwest
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Multimedia Card */}
-            <Card className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border-l-4 border-primary overflow-hidden animate-in fade-in slide-in-from-bottom duration-700 delay-200">
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border-l-4 border-orange-500 overflow-hidden animate-in fade-in slide-in-from-bottom duration-700 delay-200 bg-white">
               <div className="aspect-video relative overflow-hidden">
                 <Image
                   src="/multimedia-journalism-video-setup.png"
@@ -85,26 +105,26 @@ export default function HomePage() {
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-orange-600/40 via-transparent to-transparent" />
               </div>
-              <CardContent className="p-6 bg-gradient-to-br from-white to-primary/5">
+              <CardContent className="p-6 bg-gradient-to-br from-white to-orange-50">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-primary/20 rounded-xl">
-                    <Camera className="h-5 w-5 text-primary" />
+                  <div className="p-3 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl shadow-lg">
+                    <Camera className="h-5 w-5 text-white" />
                   </div>
-                  <span className="text-sm font-bold text-primary uppercase tracking-wide">
+                  <span className="text-sm font-bold text-orange-600 uppercase tracking-wider">
                     Multimedia
                   </span>
                 </div>
-                <h3 className="font-bold text-xl mb-3 text-foreground">Video Storytelling</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Compelling visual narratives that bring stories to life through video and photography.
+                <h3 className="font-bold text-xl mb-3 text-gray-900">Video Storytelling</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Compelling visual narratives that bring complex stories to life through video and photography.
                 </p>
               </CardContent>
             </Card>
 
             {/* Social Media Card */}
-            <Card className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border-l-4 border-secondary overflow-hidden animate-in fade-in slide-in-from-bottom duration-700 delay-400">
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border-l-4 border-purple-500 overflow-hidden animate-in fade-in slide-in-from-bottom duration-700 delay-400 bg-white">
               <div className="aspect-video relative overflow-hidden">
                 <Image
                   src="/social-media-workspace.png"
@@ -112,26 +132,26 @@ export default function HomePage() {
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-secondary/30 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-600/40 via-transparent to-transparent" />
               </div>
-              <CardContent className="p-6 bg-gradient-to-br from-white to-secondary/10">
+              <CardContent className="p-6 bg-gradient-to-br from-white to-purple-50">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-secondary/30 rounded-xl">
-                    <Share2 className="h-5 w-5 text-secondary-foreground" />
+                  <div className="p-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl shadow-lg">
+                    <Share2 className="h-5 w-5 text-white" />
                   </div>
-                  <span className="text-sm font-bold text-secondary-foreground uppercase tracking-wide">
+                  <span className="text-sm font-bold text-purple-600 uppercase tracking-wider">
                     Social Media
                   </span>
                 </div>
-                <h3 className="font-bold text-xl mb-3 text-foreground">Digital Engagement</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <h3 className="font-bold text-xl mb-3 text-gray-900">Digital Engagement</h3>
+                <p className="text-gray-600 leading-relaxed">
                   Strategic social media campaigns that amplify important stories and engage communities.
                 </p>
               </CardContent>
             </Card>
 
             {/* Written Work Card */}
-            <Card className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border-l-4 border-accent overflow-hidden animate-in fade-in slide-in-from-bottom duration-700 delay-600">
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border-l-4 border-emerald-500 overflow-hidden animate-in fade-in slide-in-from-bottom duration-700 delay-600 bg-white">
               <div className="aspect-video relative overflow-hidden">
                 <Image
                   src="/journalist-laptop-notebook-coffee.png"
@@ -139,19 +159,19 @@ export default function HomePage() {
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-accent/30 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-emerald-600/40 via-transparent to-transparent" />
               </div>
-              <CardContent className="p-6 bg-gradient-to-br from-white to-accent/10">
+              <CardContent className="p-6 bg-gradient-to-br from-white to-emerald-50">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-accent/30 rounded-xl">
-                    <PenTool className="h-5 w-5 text-accent-foreground" />
+                  <div className="p-3 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl shadow-lg">
+                    <PenTool className="h-5 w-5 text-white" />
                   </div>
-                  <span className="text-sm font-bold text-accent-foreground uppercase tracking-wide">
+                  <span className="text-sm font-bold text-emerald-600 uppercase tracking-wider">
                     Written Work
                   </span>
                 </div>
-                <h3 className="font-bold text-xl mb-3 text-foreground">In-Depth Articles</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <h3 className="font-bold text-xl mb-3 text-gray-900">In-Depth Reporting</h3>
+                <p className="text-gray-600 leading-relaxed">
                   Investigative pieces and feature stories that dive deep into the issues that matter.
                 </p>
               </CardContent>
@@ -160,10 +180,10 @@ export default function HomePage() {
 
           {/* CTA Button */}
           <div className="text-center mt-16 animate-in fade-in slide-in-from-bottom duration-700 delay-800">
-            <Button asChild size="lg" className="group bg-gradient-to-r from-primary to-secondary hover:shadow-lg">
+            <Button asChild size="lg" className="group bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 text-white shadow-xl text-lg px-8 py-4">
               <Link href="/work" className="flex items-center gap-2">
                 Explore All Work 
-                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
           </div>
@@ -171,20 +191,27 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-accent/10 via-background to-secondary/10">
+      <section className="py-20 px-6 bg-gradient-to-br from-indigo-50 via-blue-50 to-cyan-50">
         <div className="max-w-4xl mx-auto text-center animate-in fade-in slide-in-from-bottom duration-700">
-          <Card className="bg-white/80 backdrop-blur-sm border-white/50 shadow-xl overflow-hidden">
+          <Card className="bg-white/90 backdrop-blur-sm border-2 border-blue-100 shadow-2xl overflow-hidden">
             <CardContent className="p-12">
-              <h2 className="text-4xl font-bold text-foreground mb-6">Let's Connect</h2>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto">
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                Let's <span className="text-transparent bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text">Connect</span>
+              </h2>
+              <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto">
                 Have a story tip or interested in collaborating? I'd love to hear from you.
               </p>
-              <Button asChild size="lg" className="group">
-                <Link href="mailto:marissa@example.com" className="flex items-center gap-2">
-                  Get In Touch
-                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Button asChild size="lg" className="group bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white shadow-lg">
+                  <Link href="mailto:marissaconter@gmail.com" className="flex items-center gap-2">
+                    <Mail className="h-5 w-5" />
+                    Email Me
+                  </Link>
+                </Button>
+                <div className="text-lg text-gray-600 font-medium">
+                  marissaconter@gmail.com
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
