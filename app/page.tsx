@@ -75,8 +75,8 @@ export default function HomePage() {
               </div>
 
               {/* Floating location badge */}
-              <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white p-4 rounded-2xl shadow-xl border-4 border-white animate-in zoom-in duration-500 delay-700">
-                <p className="text-sm font-bold flex items-center gap-2">
+              <div className="absolute -bottom-4 -right-0 bg-gradient-to-r from-emerald-500 to-teal-500 text-white p-4 mr-20 rounded-2xl shadow-xl border-4 border-white animate-in zoom-in duration-500 delay-700">
+                <p className="text-lg font-bold flex items-center gap-2">
                   📍 Seattle, WA
                 </p>
               </div>

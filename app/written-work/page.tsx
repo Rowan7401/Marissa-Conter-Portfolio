@@ -77,9 +77,9 @@ export default function WrittenWorkPage() {
         {/* Header */}
         <div className="mb-12">
           <Button asChild variant="ghost" className="mb-6 text-gray-600 hover:text-gray-900">
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="/work" className="flex items-center gap-2">
               <ArrowLeft className="h-4 w-4" />
-              Back to Home
+              Back to My Work
             </Link>
           </Button>
           
