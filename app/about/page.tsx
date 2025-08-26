@@ -21,28 +21,29 @@ export default function AboutPage() {
               
               <div className="prose prose-xl text-muted-foreground leading-relaxed space-y-6">
                 <p>
-                  I'm a passionate journalist based in the vibrant city of Seattle, where I've been telling stories that
-                  matter for the past three years. My journey into journalism began with a simple belief: every person
-                  has a story worth telling, and every community deserves to have its voice heard.
+                  I am working as a reporter for the <span className="font-bold text-primary"><a href="https://www.kitsapsun.com/">Kitsap Sun</a></span>, largely covering crime, courts, public safety threats and general features. 
+                  I wrote for my school's newspaper since my first year, and I was the editor-in-chief my senior year.
                 </p>
                 <p>
-                  Growing up in the Pacific Northwest, I developed a deep appreciation for both urban innovation and
-                  environmental stewardship. This unique perspective shapes my reporting, whether I'm covering local
-                  politics, community initiatives, or the intersection of technology and society.
+                  This is my first position since ​I graduated Magna Cum Laude from Gonzaga University in May 2024 with a Bachelor of Arts, 
+                  where I majored in journalism and minored in writing
                 </p>
                 <p>
-                  My work spans multiple mediums – from in-depth written features to multimedia storytelling and
-                  strategic social media campaigns. I believe in meeting audiences where they are and using the most
-                  effective medium to tell each story.
+                   I was also the writing editor for my school's yearbook, and during my time abroad in Florence, 
+                   I had an internship for an English-speaking publication. I am passionate about writing and getting to tell stories that are important!
                 </p>
               </div>
 
               <div className="flex flex-wrap gap-4">
                 <Button asChild size="lg" className="group">
-                  <Link href="#" className="flex items-center gap-2">
+                  <a
+                    href="/Marissa_Conter_Resume.docx"
+                    download
+                    className="flex items-center gap-2"
+                  >
                     <Download className="h-4 w-4" />
-                    Download Resume
-                  </Link>
+                    Download My Resume
+                  </a>
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link href="/work">View My Work</Link>
@@ -83,7 +84,7 @@ export default function AboutPage() {
               {
                 icon: Award,
                 title: "Specialization",
-                description: "Community & Tech Stories",
+                description: "Breaking News, Crime, & Local Culture Stories",
                 color: "text-accent-foreground",
                 delay: "delay-600"
               }
@@ -168,25 +169,25 @@ export default function AboutPage() {
 
           {/* Education & Background */}
           <div className="bg-gradient-to-br from-muted/30 to-secondary/10 rounded-3xl p-12 animate-in fade-in slide-in-from-bottom duration-700 delay-1000">
-            <h2 className="text-4xl font-bold text-foreground mb-12 text-center">Education & Background</h2>
+            <h2 className="text-4xl font-bold text-foreground mb-12 text-center">Education & Experience</h2>
             <div className="max-w-4xl mx-auto space-y-8">
               {[
-                {
-                  title: "Bachelor of Arts in Journalism",
-                  institution: "University of Washington, Seattle",
-                  detail: "Graduated Magna Cum Laude, 2021",
+                   {
+                  title: "Public Safety Reporter",
+                  institution: "Seattle Community College",
+                  detail: "November 2024 - Present",
                   color: "border-primary"
                 },
                 {
-                  title: "Digital Media Certificate",
-                  institution: "Seattle Community College",
-                  detail: "Completed 2022",
+                  title: "Bachelor of Arts in Journalism | Minor in Writing",
+                  institution: "Gonzaga University, Spokane, WA",
+                  detail: "Graduated Magna Cum Laude, 2024",
                   color: "border-secondary"
                 },
                 {
-                  title: "Freelance Journalist",
-                  institution: "Various Seattle Publications",
-                  detail: "2021 - Present",
+                  title: "Editor-in-Chief",
+                  institution: "The Gonzaga Bulletin",
+                  detail: "January 2024 - May 2024",
                   color: "border-accent"
                 }
               ].map((item, index) => (
