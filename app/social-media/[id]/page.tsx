@@ -1,4 +1,4 @@
-import { multimediaPageSpecifics } from '../multimediaData';
+import { multimediaPageSpecifics } from '../socialMediaData';
 import Link from 'next/link';
 import { Inter } from 'next/font/google';
 import { Navigation } from '@/components/navigation';
@@ -11,12 +11,12 @@ interface Props {
 
 export default function ProjectPage({ params }: Props) {
   const projectId = parseInt(params.id, 10);
-  const project = multimediaPageSpecifics.find(p => p.id === projectId);
+  const project = socialMediaSpecifics.find(p => p.id === projectId);
 
   if (!project) return <p>Project not found.</p>;
 
   const prevId = projectId > 1 ? projectId - 1 : null;
-  const nextId = projectId < multimediaPageSpecifics.length ? projectId + 1 : null;
+  const nextId = projectId < socialMediaSpecifics.length ? projectId + 1 : null;
 
   return (
     <div className={`min-h-screen bg-gray-50 pt-20 ${inter.className}`}>

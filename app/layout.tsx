@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSans.variable} antialiased`}>
       <head>
-        <link rel="icon" href="/gonzaga-bulletin-logo.jpg" />
+        <link rel="icon" href="/marissa_favicon.png" />
       </head>
       <body className="font-sans">{children}</body>
     </html>

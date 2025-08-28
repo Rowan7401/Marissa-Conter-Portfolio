@@ -3,50 +3,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import Image from "next/image"
+import { multimediaPageSpecifics } from "./multimediaData"
 import { ArrowLeft, Play, Eye, Clock, Calendar } from "lucide-react"
-
-const multimediaWork = [
-  {
-    id: 1,
-    title: "Social Media Campaign: Glossier",
-    description: "Built an Instagram account mimicking official Glossier branding and devised realistic content calendar posting schedule.",
-    type: "Instagram Account",
-    date: "2023-03-15",
-    duration: "6 posts",
-    views: "18.9K",
-    thumbnail: "/Glossier-insta.jpg"
-  },
-  {
-    id: 2,
-    title: "TikToks: Gonzaga Engineering & Applied Science",
-    description: "Promotional TikTok series for Gonzaga's engineering & applied science major and the Boillier Center.",
-    type: "TikTok Series",
-    date: "2023-02-10",
-    duration: "2 Videos",
-    views: "45.2K",
-    thumbnail: "/tiktok-banner.png"
-  },
-  {
-    id: 3,
-    title: "Podcast: Gonzaga Univerity Sustainability",
-    description: "Episode highlighting waste reduction practices on campus relating to \"care for the planet\" part of  GU's mission statement.",
-    type: "Podcast Episode",
-    date: "2023-04-15",
-    duration: "32:45",
-    views: "62.8K",
-    thumbnail: "/podcast girl.jpg"
-  },
-  {
-    id: 4,
-    title: "Content Analysis: Devon Lee Carlson",
-    description: "Analysis of themes and trends of social media influencer and entrepreneur Deven Lee Carlson.",
-    type: "Write Up & Visual Aid",
-    date: "2023-02-28",
-    duration: "7 slides",
-    views: "28.7K",
-    thumbnail: "/Devon Lee Carlson.jpg"
-  },  
-]
 
 export default function MultimediaPage() {
   return (
@@ -65,13 +23,13 @@ export default function MultimediaPage() {
           
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Multimedia Work</h1>
           <p className="text-xl text-gray-600 max-w-2xl">
-            Visual storytelling through video documentaries, photo essays, and podcasts.
+            Visual storytelling through social media, crafting blog posts, and creating podcasts from my time at Gonzaga University.
           </p>
         </div>
 
         {/* Content Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {multimediaWork.map((project) => (
+          {multimediaPageSpecifics.map((project) => (
             <Card key={project.id} className="w-86 h-116 hover:shadow-lg transition-all duration-300 bg-white">
               <div className="relative w-full h-82 overflow-hidden">
                 <Image
