@@ -25,7 +25,7 @@ export default function HomePage() {
 
                 <div className="space-y-3">
                   <h2 className="text-2xl lg:text-3xl font-semibold text-gray-700">
-                    Reporter
+                    Reporter (nice fonts, bold background colors, edgy fonts, white, popping photos)
                   </h2>
                   <p className="text-xl text-gray-600 font-medium">
                     Crime, Courts, Public Safety & More

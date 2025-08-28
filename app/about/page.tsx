@@ -10,49 +10,49 @@ export default function AboutPage() {
     <div className="min-h-screen">
       <Navigation />
 
-      <div className="pt-24 pb-16 px-6">
+      <div className="pt-16 pb-16 px-6">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
-          <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
+          <div className="grid lg:grid-cols-2 gap-16 items-start mb-12">
             <div className="space-y-8 animate-in fade-in slide-in-from-left duration-700">
-              <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-2">
                 About <span className="text-primary">Marissa</span>
               </h1>
               
               <div className="prose prose-xl text-muted-foreground leading-relaxed space-y-6">
-                <p>
+                <p className="text-lg">
                   I am working as a reporter for the <span className="font-bold text-primary"><a href="https://www.kitsapsun.com/">Kitsap Sun</a></span>, largely covering crime, courts, public safety threats and general features. 
                   I wrote for my school's newspaper since my first year, and I was the editor-in-chief my senior year.
                 </p>
-                <p>
+                <p className="text-lg">
                   This is my first position since ​I graduated Magna Cum Laude from Gonzaga University in May 2024 with a Bachelor of Arts, 
                   where I majored in journalism and minored in writing
                 </p>
-                <p>
+                <p className="text-lg">
                    I was also the writing editor for my school's yearbook, and during my time abroad in Florence, 
                    I had an internship for an English-speaking publication. I am passionate about writing and getting to tell stories that are important!
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-4">
-                <Button asChild size="lg" className="group">
+              <div className="flex flex-wrap gap-16">
+                <Button className="w-72 h-14 text-xl">
                   <a
                     href="/Marissa_Conter_Resume.docx"
                     download
                     className="flex items-center gap-2"
                   >
-                    <Download className="h-4 w-4" />
+                    <Download className="!w-8 !h-8" />
                     Download My Resume
                   </a>
                 </Button>
-                <Button asChild variant="outline" size="lg">
+                <Button className="w-48 h-14 text-xl bg-white text-black border border-gray-500">
                   <Link href="/work">View My Work</Link>
                 </Button>
               </div>
             </div>
 
-            <div className="relative animate-in fade-in slide-in-from-right duration-700 delay-300">
-              <div className="aspect-[3/4] relative overflow-hidden rounded-3xl shadow-2xl">
+            <div className="mt-6 ml-32 relative animate-in fade-in slide-in-from-right duration-700 delay-300">
+              <div className="w-84 h-126 relative overflow-hidden rounded-3xl shadow-2xl">
                 <Image
                   src="/grad-headshot.jpg"
                   alt="Marissa Conter Professional Photo"

@@ -53,10 +53,10 @@ export default function MultimediaPage() {
     <div className="min-h-screen bg-gray-50">
       <Navigation />
       
-      <div className="max-w-6xl mx-auto px-6 pt-24 pb-16">
+      <div className="max-w-6xl mx-auto px-6 pt-20 pb-8">
         {/* Header */}
-        <div className="mb-12">
-          <Button asChild variant="ghost" className="mb-6 text-gray-600 hover:text-gray-900">
+        <div className="mb-6">
+          <Button asChild variant="ghost" className="mb-0 text-gray-600 hover:text-gray-900">
             <Link href="/work" className="flex items-center gap-2">
               <ArrowLeft className="h-4 w-4" />
               Back to My Work
@@ -72,8 +72,8 @@ export default function MultimediaPage() {
         {/* Content Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {multimediaWork.map((project) => (
-            <Card key={project.id} className="group hover:shadow-lg transition-all duration-300 bg-white">
-              <div className="aspect-video relative overflow-hidden">
+            <Card key={project.id} className="w-86 h-116 hover:shadow-lg transition-all duration-300 bg-white">
+              <div className="relative w-full h-82 overflow-hidden">
                 <Image
                   src={project.thumbnail}
                   alt={project.title}
@@ -110,19 +110,24 @@ export default function MultimediaPage() {
                 </div>
               </div>
               
-              <CardContent className="py-2 px-6">               
+              <CardContent className="py-2 px-6 flex flex-col h-full">               
                 <h3 className="font-bold text-lg mb-3 text-gray-900 group-hover:text-orange-600 transition-colors line-clamp-2">
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-600 text-sm mb-4 line-clamp-3">
+                <p className="text-gray-600 text-sm mb-0 line-clamp-3">
                   {project.description}
                 </p>
                 
-                <Button size="sm" variant="outline" className="w-full">
-                  <Play className="mr-2 h-4 w-4" />
-                  View Project
+                <Button
+                  className="mt-auto mx-auto w-[80%] bg-black/12 text-black cursor-pointer"
+                  asChild
+                >
+                  <Link href={`/multimedia/${project.id}`}>
+                    View Project
+                  </Link>
                 </Button>
+
               </CardContent>
             </Card>
           ))}

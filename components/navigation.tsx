@@ -31,7 +31,11 @@ export function Navigation() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md" style={{ boxShadow: '0 0.01rem 0.5rem rgba(20, 20, 20, 0.8)', backgroundColor: 'rgba(180, 180, 180, 0.6)', backgroundImage:
+      'linear-gradient(to right, rgba(202, 202, 202, 0.1), rgba(32, 117, 228, 1), rgba(183, 183, 183, 0.1))',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '100% 0.3rem',    
+    backgroundPosition: 'left bottom'  }}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -54,7 +58,7 @@ export function Navigation() {
                   className={`text-lg font-medium transition-all duration-200 hover:text-primary ${
                     isActive 
                       ? 'text-primary border-b-2 border-primary pb-1' 
-                      : 'text-muted-foreground hover:text-foreground'
+                      : 'text-black hover:text-foreground'
                   }`}
                 >
                   {item.name}
@@ -69,7 +73,7 @@ export function Navigation() {
                 className={`text-lg font-medium transition-all ${
                   contactOpen 
                     ? 'text-primary font-bold border-b-2 border-primary pb-1' 
-                    : 'text-muted-foreground hover:text-foreground'
+                    : 'text-black hover:text-foreground'
                 }`}
               >
                 Contact
