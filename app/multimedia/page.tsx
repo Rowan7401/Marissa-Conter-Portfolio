@@ -74,7 +74,7 @@ export default function MultimediaPage() {
                 </h3>
                 
                 <p className="text-gray-600 text-sm mb-0 line-clamp-3">
-                  {project.description}
+                  {project.shortDescription}
                 </p>
                 
                 <Button

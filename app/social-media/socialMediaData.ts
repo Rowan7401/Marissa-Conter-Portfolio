@@ -1,56 +1,51 @@
 export const socialMediaSpecifics = [
-  {
-    id: 1,
-    title: "Breaking: Major Drug Bust Coverage",
-    description: "Live Twitter thread covering county-wide drug operation with real-time updates.",
-    platform: "Twitter",
-    date: "2024-08-15",
-    metrics: { views: "156K", likes: "2.8K", shares: "543" },
-    thumbnail: "/social-breaking-news.jpg"
-  },
-  {
-    id: 2,
-    title: "Mental Health Resources Campaign",
-    description: "Instagram story series highlighting community mental health resources.",
-    platform: "Instagram",
-    date: "2024-08-12",
-    metrics: { views: "89K", likes: "3.2K", shares: "892" },
-    thumbnail: "/social-mental-health.jpg"
-  },
-  {
-    id: 3,
-    title: "Behind the Courthouse",
-    description: "TikTok series showing daily life of court reporting and legal proceedings.",
-    platform: "TikTok",
-    date: "2024-08-10",
-    metrics: { views: "234K", likes: "12.5K", shares: "1.8K" },
-    thumbnail: "/social-courthouse.jpg"
-  },
-  {
-    id: 4,
-    title: "Emergency Response Updates",
-    description: "Facebook live coverage of emergency situations with safety information.",
-    platform: "Facebook",
-    date: "2024-08-08",
-    metrics: { views: "67K", likes: "1.9K", shares: "423" },
-    thumbail: "/social-emergency.jpg"
-  },
-  {
-    id: 5,
-    title: "Justice System Explained",
-    description: "Educational content breaking down legal processes for general audiences.",
-    platform: "Instagram",
-    date: "2024-08-05",
-    metrics: { views: "45K", likes: "2.1K", shares: "634" },
-    thumbnail: "/social-education.jpg"
-  },
-  {
-    id: 6,
-    title: "Journalism Q&A Sessions",
-    description: "Interactive sessions answering questions about reporting and journalism ethics.",
-    platform: "Instagram",
-    date: "2024-08-01",
-    metrics: { views: "23K", likes: "1.4K", shares: "267" },
-    thumbnail: "/social-qa.jpg"
-  }
-]
+    {
+        id: 1,
+        title: "Student Run Boba and Taiyaki Shop: GU Bulletin",
+        shortDescription: "Written article with accompanying high performing Instagram post for student run business near campus.",
+        description: "This article I wrote about a student opening a business right next to campus did really well on our social media because we tagged the business"
+        + " instagram profile as well as the student's personal account, so they could repost the post on their respective accounts and reach a larger audience."
+        + " The university's official Instagram account also reposted it and commented on the post.",
+        date: "2023-04-28",
+        type: "High Performing Instagram Post",
+        duration: "3 photos & 1 article",
+        thumbnail: "/gu-boba-thumbnail.jpg",
+        images: ["/gu-boba-thumbnail.jpg", "/gu-boba-slide2.jpg"],
+        tiktoks: [],
+        linkTitles: ["Instagram Post", "Article on the GU Bulletin"],
+        links: ["https://www.instagram.com/p/Crj6KuIpZaj/?img_index=1", 
+            "https://www.gonzagabulletin.com/arts_and_entertainment/gu-student-to-open-boba-and-taiyaki-shop-next-to-campus/article_8e489220-e3bc-11ed-a377-372db7825bb2.html"]
+    },
+    {
+        id: 2,
+        title: "Promoting Content Utilizing Diverse Platforms",
+        description: "Before I was Editor-In-Chief, our video team were producing videos that were being posted to a YouTube account that was going unnoticed."
+        + " In order to better promote this content, I instructed digital editors to start posting the videos on our Instagram as well, which had the largest following out of our social media accounts."
+        + " When I first became an editor, I pitched a street sweep style segment that approached students on campus who wore headphones and asked \"What are you listening to?\" building off of a viral trend on TikTok.",
+        shortDescription: "Boosted engagement on the GU Bullentin's projects, taking advantage of viral TikTok trends.",
+        date: "2024-01-02",
+        type: "Multiple Platforms",
+        duration: "1 Series",
+        thumbnail: "/insta-listening-to.jpg",
+        images: ["/black-student-union.jpg", "/insta-listening-to.jpg"],
+        tiktoks: [],
+        linkTitles: ["Black Student Union Instagram Reel", "Series: What are you listening to?"],
+        links: ["https://www.instagram.com/reel/C6aDhLHJtYj/", "https://www.instagram.com/reel/Cl-LwnuAico/"]
+    },
+    {
+        id: 3,
+        title: "Increasing DEI Visibility",
+        description: "In order to support our mission to tell stories representative of diverse perspectives, I created a new section on our newspaper's website where each article,"
+        + " regardless of original section, that featured Diversity, Equity, and Inclusion subject matter was tagged into to increase their visibility. In addition, there was a weekly"
+        + " DEI spotlight posted to our Instagram account.",
+        shortDescription: "Spotlighted stories with diverse perspectives by creating new DEI focused section on website.",
+        date: "2024-01-02",
+        type: "Articles & Instagram Posts",
+        duration: "Weekly Spotlight Posts",
+        thumbnail: "/DEI-GU-Bulletin.jpg",
+        images: ["/DEI-GU-Bulletin.jpg", "/DEI-insta-spotlight.jpg"],
+        tiktoks: [],
+        linkTitles: ["GU Bulletin DEI Section", "DEI Instagram Spotlight Post"],
+        links: ["https://www.gonzagabulletin.com/dei_features/", "https://www.instagram.com/p/C3uAWWQuLcm/?img_index=1"]
+    },
+];

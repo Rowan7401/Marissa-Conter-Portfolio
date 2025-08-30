@@ -1,4 +1,4 @@
-import { socialMediaSpecifics } from '../socialMediaData';
+import { writtenWorkSpecifics } from '../writtenWorkData';
 import Link from 'next/link';
 import { Inter } from 'next/font/google';
 import { Navigation } from '@/components/navigation';
@@ -11,12 +11,12 @@ interface Props {
 
 export default function ProjectPage({ params }: Props) {
   const projectId = parseInt(params.id, 10);
-  const project = socialMediaSpecifics.find(p => p.id === projectId);
+  const project = writtenWorkSpecifics.find(p => p.id === projectId);
 
   if (!project) return <p>Project not found.</p>;
 
   const prevId = projectId > 1 ? projectId - 1 : null;
-  const nextId = projectId < socialMediaSpecifics.length ? projectId + 1 : null;
+  const nextId = projectId < writtenWorkSpecifics.length ? projectId + 1 : null;
 
   return (
     <div className={`min-h-screen bg-gray-50 pt-20 ${inter.className}`}>
@@ -71,7 +71,7 @@ export default function ProjectPage({ params }: Props) {
 
 
           {/* Description */}
-          <p className="text-gray-700 mb-6 mt-6">{project.description}</p>
+          <p className="text-gray-700 mb-6 mt-6 whitespace-pre-line">{project.description}</p>
 
           {/* Dynamic Links */}
           {project.links && project.links.length > 0 && (
@@ -95,10 +95,10 @@ export default function ProjectPage({ params }: Props) {
             {/* Previous Button */}
             {prevId ? (
               <Link
-                href={`/social-media/${prevId}`}
+                href={`/written-work/${prevId}`}
                 className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition"
               >
-                ← Previous Project
+                ← Previous Article
               </Link>
             ) : (
               <div />
@@ -106,19 +106,19 @@ export default function ProjectPage({ params }: Props) {
 
             {/* Return to My Work */}
             <Link
-              href="/social-media"
+              href="/written-work"
               className="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition"
             >
-              Return to My Social Media Work
+              Return to My Written Work
             </Link>
 
             {/* Next Button */}
             {nextId ? (
               <Link
-                href={`/social-media/${nextId}`}
+                href={`/written-work/${nextId}`}
                 className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition"
               >
-                Next Project →
+                Next Article →
               </Link>
             ) : (
               <div />

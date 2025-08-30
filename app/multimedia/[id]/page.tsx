@@ -71,7 +71,7 @@ export default function ProjectPage({ params }: Props) {
 
 
           {/* Description */}
-          <p className="text-gray-700 mb-6">{project.description}</p>
+          <p className="text-gray-700 mb-6 mt-6">{project.description}</p>
 
           {/* Dynamic Links */}
           {project.links && project.links.length > 0 && (
