@@ -49,18 +49,18 @@ export default function SocialMediaPage() {
                 ) : null} */}
 
                 <div className="absolute top-3 left-3">
-                  <span className="px-2 py-1 bg-white/90 backdrop-blur-sm text-gray-900 text-xs font-medium rounded">
+                  <span className="px-2 py-1 bg-white/50 backdrop-blur-sm text-gray-900 text-xs font-medium rounded">
                     {project.type}
                   </span>
                 </div>
 
-                <div className="absolute bottom-3 left-3 flex justify-between items-center bg-white/90 backdrop-blur-sm text-grey rounded-[0.35rem] p-1 text-sm">
+                <div className="absolute bottom-3 left-3 flex justify-between items-center bg-white/50 backdrop-blur-sm text-grey rounded-[0.35rem] p-1 text-sm">
                   <div className="flex items-center gap-1">
                     <Calendar className="h-4 w-4" />
                     {new Date(project.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                   </div>
                 </div>
-                <div className="absolute bottom-3 right-3 flex justify-between items-center bg-white/90 backdrop-blur-sm text-grey rounded-[0.35rem] p-1 text-sm">
+                <div className="absolute bottom-3 right-3 flex justify-between items-center bg-white/50 backdrop-blur-sm text-grey rounded-[0.35rem] p-1 text-sm">
                   <div className="flex items-center gap-1">
                     <Clock className="h-4 w-4" />
                     {project.duration}

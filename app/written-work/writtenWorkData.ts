@@ -67,4 +67,51 @@ export const writtenWorkSpecifics = [
         links: ["https://www.kitsapsun.com/story/news/2025/05/15/origins-in-kitsap-lead-to-what-the-pho-and-phonomenal-foods/83351969007/", 
             "https://www.kitsapsun.com/story/news/2025/04/17/poulsbo-anti-trump-protests-feature-revival-of-wwii-norwegian-paperclip-movement/82778027007/"]
     },
+    {
+        id: 4,
+        title: "Narrative Journalism",
+        description: "As Editor in Chief (EIC), I managed a team of students of various academic backgrounds, many were not journalism majors. So, I implemented a new content idea"
+        + " to give those who wanted to experiment with utilizing literary devices in their journalistic work. I published this piece as an example, which is a personal essay about"
+        + " myself and my cultural identity through interviews with my grandmother, mother and me. It was a challenging piece to write since as a seasoned news writer, I am used to"
+        + " being objective and somewhat removed from my articles, and this piece is the exact opposite.",
+        shortDescription: "Personal narrative story highlighting family, identity formation through childhood, and acceptance.",
+        date: "2025-02-16",
+        type: "Narrative Article",
+        duration: "1 Article",
+        thumbnail: "/marissa-EIC.jpg",
+        images: ["/marissa-EIC.jpg"],
+        tiktoks: [],
+        linkTitles: ["Spring editor-in-chief for The Gonzaga Bulletin reflects on family"],
+        links: ["https://www.gonzagabulletin.com/news/spring-editor-in-chief-for-the-gonzaga-bulletin-reflects-on-family/article_7285e0d2-cbf7-11ee-aa01-8b7ca2edbbed.html"]
+    },
+    {
+        id: 5,
+        title: "Magenta Florence & Vista Magazine",
+        description: "When I studied abroad in Florence, Italy, for a semester, I interned as a reporter for an English-speaking publication."
+        + "The first assignment I was given was to attend the media event prior to the grand opening of the renovation of the Sala del Colosso, the first room in the historic Accademia.",
+        shortDescription: "Informative news article on the grand reopening of a historic art museum in Florence, Italy.",
+        date: "2022-02-09",
+        type: "Informative Article",
+        duration: "1 Article",
+        thumbnail: "/Magenta-florence.jpg",
+        images: ["/Magenta-florence.jpg", "/boticelli-madonna.jpg"],
+        tiktoks: [],
+        linkTitles: ["The Accademia’s Renovated ‘Sala del Colosso’ Unveiled"],
+        links: ["https://www.magentaflorence.com/the-accademias-renovated-sala-del-colosso-unveiled/"]
+    },
+    {
+        id: 6,
+        title: "Freelance-work: The Spokesman-Review",
+        description: "I freelanced for The Spokesman-Review a few times while I was a student in Spokane. For this article, I attended and covered a press release during"
+        + " which a local nonprofit announced a new road race to raise money for cancer research and resources.",
+        shortDescription: "Free-lance article for newspaper local to my college city, The Spokesman-Review of Spokane, Washington.",
+        date: "2023-05-17",
+        type: "Event Coverage Article",
+        duration: "1 Article",
+        thumbnail: "/Spokesman-review.jpg",
+        images: ["/spokane-man-news.jpg", "/blvd-race.jpg"],
+        tiktoks: [],
+        linkTitles: ["New road race hopes to bring 5,000 to the streets of downtown"],
+        links: ["https://www.spokesman.com/stories/2023/may/11/new-road-race-hopes-to-bring-5000-to-the-streets-o/"]
+    },
 ];
