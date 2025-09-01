@@ -15,20 +15,17 @@ export default function HomePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative pt-40 pb-16 px-6 overflow-hidden">
+      <section className="relative pt-40 pb-16">
         {/* Subtle texture overlay */}
         <div className="absolute inset-0 bg-[url('/noise-texture.png')] opacity-20 pointer-events-none"></div>
 
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
-            <div className="space-y-8 animate-in fade-in slide-in-from-left duration-700">
-              <div className="space-y-6">
+            <div className="space-y-8 w-[39vw] animate-in fade-in slide-in-from-left duration-700">
+              <div className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent space-y-6">
                 <h1 className={`${playfair.className} text-6xl lg:text-7xl font-bold leading-tight`}>
-                  Marissa{" "}
-                  <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
-                    Conter
-                  </span>
+                  Marissa Conter
                 </h1>
 
                 <div className="space-y-3">
@@ -63,8 +60,8 @@ export default function HomePage() {
               <div className="flex gap-4">
                 <Button
                   asChild
-                  size="lg"
-                  className="group bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white shadow-lg"
+                  variant="outline"
+                  className="group bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-300 hover:to-teal-300 text-white text-xl shadow-lg w-54 h-12"
                 >
                   <Link href="/work" className="flex items-center gap-2">
                     View My Work
@@ -74,8 +71,7 @@ export default function HomePage() {
                 <Button
                   asChild
                   variant="outline"
-                  size="lg"
-                  className="border-emerald-400 text-emerald-400 hover:bg-emerald-500/10"
+                  className="border-emerald-400 text-emerald-400 hover:bg-emerald-500/70 text-xl shadow-lg w-54 h-12"
                 >
                   <Link href="/about">About Me</Link>
                 </Button>
@@ -83,7 +79,7 @@ export default function HomePage() {
             </div>
 
             {/* Photo */}
-            <div className="relative animate-in fade-in slide-in-from-right duration-700 delay-300">
+            <div className="ml-24 relative animate-in fade-in slide-in-from-right duration-700 delay-300">
               <div className="h-[28rem] w-full relative overflow-hidden rounded-3xl shadow-2xl ring-4 ring-emerald-400/20 hover:ring-emerald-400/40 transition-all duration-500">
                 <Image
                   src="/kitsap-sun-headshot.jpg"
@@ -96,7 +92,7 @@ export default function HomePage() {
               </div>
 
               {/* Floating location badge */}
-              <div className="absolute -bottom-4 -right-0 bg-gradient-to-r from-emerald-500 to-teal-500 text-white p-4 mr-20 rounded-2xl shadow-xl border-4 border-white animate-in zoom-in duration-500 delay-700">
+              <div className="absolute -bottom-4 -right-32 bg-gradient-to-r from-emerald-500 to-teal-500 text-white p-4 mr-20 rounded-2xl shadow-xl border-4 border-white animate-in zoom-in duration-500 delay-700">
                 <p className="text-lg font-bold flex items-center gap-2">
                   📍 Seattle, WA
                 </p>

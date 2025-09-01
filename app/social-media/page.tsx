@@ -7,40 +7,41 @@ import { ArrowLeft, Calendar, Clock } from "lucide-react"
 import { socialMediaSpecifics } from "./socialMediaData"
 
 export default function SocialMediaPage() {
-  return ( 
+  return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 text-white">
       <Navigation />
 
+      <div className="max-w-6xl mx-auto px-6 pt-20 pb-12">
 
-      <div className="max-w-6xl mx-auto px-6 pt-28 pb-12">
-        {/* Back Button */}
-        <Button
-          asChild
-          variant="ghost"
-          className="mb-6 text-gray-600 hover:text-gray-900 flex items-center gap-2"
-        >
-          <Link href="/work">
-            <ArrowLeft className="h-4 w-4" />
-            Back to My Work
-          </Link>
-        </Button>
+        {/* Header Row with Back Button */}
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+          <Button
+            asChild
+            variant="ghost"
+            className="text-white-600 hover:text-gray-900 flex items-center w-36 gap-2 mb-4 md:mb-24"
+          >
+            <Link href="/work">
+              <ArrowLeft className="h-4 w-4" />
+              Back to My Work
+            </Link>
+          </Button>
 
-        {/* Header */}
-        <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom duration-700">
-          <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-            Social Media <span className="text-transparent bg-gradient-to-r from-pink-500 to-orange-500 bg-clip-text">Content</span>
-          </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed text-white">
-            As editor of my school newspaper, I crafted and managed social media strategies, creating engaging posts across Instagram, Twitter/X, and Facebook, while publishing articles on our newspaper's website.
-          </p>
+          <div className="md:text-left animate-in fade-in slide-in-from-bottom duration-700">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl text-transparent bg-gradient-to-r from-pink-500 to-orange-500 bg-clip-text font-bold mt-6 mb-6 ml-4 w-[55vw]">
+              Social Media Content
+            </h1>
+            <p className="text-lg text-gray-600 max-w-2xl leading-relaxed text-white text-center">
+              As editor of my school newspaper, I crafted and managed social media strategies, creating engaging posts across Instagram, Twitter/X, and Facebook, while publishing articles on our newspaper's website.
+            </p>
+          </div>
         </div>
 
         {/* Content Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-x-44 gap-y-12 justify-items-center">
           {socialMediaSpecifics.map((project) => (
             <Card
               key={project.id}
-              className="group overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 bg-white border border-gray-200 hover:-translate-y-2"
+              className="group rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 bg-white border border-gray-200 hover:-translate-y-2"
             >
               {/* Image Section */}
               <div className="relative w-full h-64 overflow-hidden">
@@ -77,7 +78,7 @@ export default function SocialMediaPage() {
               </div>
 
               {/* Card Content */}
-              <CardContent className="p-6 flex flex-col h-full">
+              <CardContent className="p-6 flex flex-col w-[25vw] h-[32vh]">
                 <h3 className="font-bold text-lg mb-3 text-gray-900 group-hover:text-pink-600 transition-colors line-clamp-2">
                   {project.title}
                 </h3>
@@ -99,16 +100,16 @@ export default function SocialMediaPage() {
         {/* Stats Section */}
         <div className="grid md:grid-cols-3 gap-8 mt-20 pt-12 border-t border-gray-200 text-center">
           <div>
-            <div className="text-4xl font-bold text-gray-900 mb-2">150+</div>
-            <div className="text-gray-600">Posts Created</div>
+            <div className="text-4xl font-bold text-white-900 mb-2">25+</div>
+            <div className="text-white-600">Video Projects</div>
           </div>
           <div>
-            <div className="text-4xl font-bold text-gray-900 mb-2">25K+</div>
-            <div className="text-gray-600">Engagements</div>
+            <div className="text-4xl font-bold text-white-900 mb-2">500+</div>
+            <div className="text-white-600">Photos Published</div>
           </div>
           <div>
-            <div className="text-4xl font-bold text-gray-900 mb-2">500K</div>
-            <div className="text-gray-600">Total Impressions</div>
+            <div className="text-4xl font-bold text-white-900 mb-2">2.5M</div>
+            <div className="text-white-600">Total Views</div>
           </div>
         </div>
       </div>
