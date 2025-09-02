@@ -13,13 +13,13 @@ export default function HomePage() {
   return (
     <div className={`${inter.className} min-h-screen bg-gradient-to-br from-[#0d1b2a] via-[#1b263b] to-[#0d1b2a] text-white`}>
       <Navigation />
-
+      
       {/* Hero Section */}
       <section className="relative pt-20 md:pt-40 pb-16">
         {/* Subtle texture overlay */}
         <div className="absolute inset-0 bg-[url('/noise-texture.png')] opacity-20 pointer-events-none"></div>
 
-        <div className="flex flex-row justify-center mx-auto relative z-10">
+        <div className="flex flex-row justify-center mx-auto relative z-2">
           <div className="grid md:grid-cols-2 ml-5 mr-5 md:mr-0 md:ml-54 gap-x-12 items-center">
             {/* Text Content */}
             <div className="space-y-4 md:space-y-8 w-[95%] md:w-[98%] animate-in fade-in slide-in-from-left duration-700">
