@@ -90,7 +90,6 @@ export function Navigation() {
                       : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'
                   }`}
               >
-                {/* Email */}
                 <div className="flex justify-between items-center">
                   <span className="text-md font-medium">
                     {copiedItem === 'email' ? 'Copied to clipboard!' : email}
@@ -98,7 +97,6 @@ export function Navigation() {
                   <button
                     onClick={() => copyToClipboard(email, 'email')}
                     className="p-2 rounded hover:bg-emerald-500/10"
-                    title="Copy Email"
                   >
                     <Copy className="h-6 w-6 text-emerald-400" />
                   </button>
@@ -106,7 +104,6 @@ export function Navigation() {
 
                 <hr className="border-emerald-500/50" />
 
-                {/* Phone */}
                 <div className="flex justify-between items-center">
                   <span className="text-md font-medium">
                     {copiedItem === 'phone' ? 'Copied to clipboard!' : phone}
@@ -114,7 +111,6 @@ export function Navigation() {
                   <button
                     onClick={() => copyToClipboard(phone, 'phone')}
                     className="p-2 rounded hover:bg-emerald-500/10"
-                    title="Copy Phone"
                   >
                     <Copy className="h-6 w-6 text-emerald-400" />
                   </button>
@@ -123,8 +119,8 @@ export function Navigation() {
             </div>
           </div>
 
-          {/* Mobile menu toggle */}
-          <div className="md:hidden flex items-center">
+          {/* Hamburger button for mobile */}
+          <div className="md:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="text-white hover:text-emerald-400 transition-colors"
@@ -134,6 +130,46 @@ export function Navigation() {
           </div>
         </div>
       </div>
+
+      {/* ✅ Mobile Navigation Menu (moved OUTSIDE the header) */}
+      {mobileMenuOpen && (
+        <div className="md:hidden absolute top-16 left-0 w-full bg-[#0f0f0f]/95 backdrop-blur-lg shadow-xl border-t border-emerald-500/20 p-6 flex flex-col space-y-4">
+          {navigation.map((item) => {
+            const isActive = pathname === item.href
+            return (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={`text-lg font-semibold ${
+                  isActive ? 'text-emerald-400' : 'text-gray-300 hover:text-emerald-300'
+                }`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {item.name}
+              </Link>
+            )
+          })}
+
+          {/* Contact section */}
+          <div className="pt-4 border-t border-emerald-500/30">
+            <p className="text-gray-400 text-sm mb-2">Contact</p>
+            <div className="space-y-2">
+              <button
+                onClick={() => copyToClipboard(email, 'email')}
+                className="w-full text-left text-gray-300 hover:text-emerald-300"
+              >
+                {copiedItem === 'email' ? 'Copied!' : email}
+              </button>
+              <button
+                onClick={() => copyToClipboard(phone, 'phone')}
+                className="w-full text-left text-gray-300 hover:text-emerald-300"
+              >
+                {copiedItem === 'phone' ? 'Copied!' : phone}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   )
 }

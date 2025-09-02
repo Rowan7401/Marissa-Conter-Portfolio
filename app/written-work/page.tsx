@@ -8,14 +8,16 @@ import { writtenWorkSpecifics } from "./writtenWorkData"
 
 export default function WrittenWorkPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 text-white">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 text-white mt-16">
       <Navigation />
-      {/* Header Row with Back Button */}
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
+
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 mx-auto gap-x-12">
+
+        {/* Header Row with Back Button */}
         <Button
           asChild
           variant="ghost"
-          className="text-white-600 hover:text-gray-900 flex items-center w-36 gap-2 mb-4 md:mb-24"
+          className="text-white-600 hover:text-gray-900 flex items-center w-36 gap-2 mt-4 md:mt-0 mb-1 md:mb-24 ml-0 md:ml-12"
         >
           <Link href="/work">
             <ArrowLeft className="h-4 w-4" />
@@ -23,22 +25,23 @@ export default function WrittenWorkPage() {
           </Link>
         </Button>
 
+        {/* Header */}
         <div className="md:text-left animate-in fade-in slide-in-from-bottom duration-700">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-transparent bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text font-bold mt-6 mb-6 ml-4 w-[55vw]">
-            Social Media Content
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-transparent bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text font-bold ml-20 md:ml-64 mt-0 md:mt-6 mb-2 md:mb-6">
+            Written Work
           </h1>
-          <p className="text-lg text-gray-600 max-w-2xl leading-relaxed text-white text-center">
-            As editor of my school newspaper, I crafted and managed social media strategies, creating engaging posts across Instagram, Twitter/X, and Facebook, while publishing articles on our newspaper's website.
+          <p className="text-lg text-gray-600 md:max-w-[75%] max-w-[97%] leading-relaxed text-white text-center ml-1 md:ml-8">
+            Over the past five years producing written journalistic content, I have created stories of varied subject matter and purposes at various publications.
           </p>
         </div>
       </div>
 
       {/* Content Grid */}
-      <div className="mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-x-44 gap-y-12 justify-items-center">
+      <div className="mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 justify-items-center">
         {writtenWorkSpecifics.map((project) => (
           <Card
             key={project.id}
-            className="group overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 bg-white border border-gray-200 hover:-translate-y-2"
+            className="w-[20rem] md:w-[25rem] group overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 bg-white border border-gray-200 hover:-translate-y-2"
           >
             {/* Image Section */}
             <div className="relative w-full h-64 overflow-hidden">
@@ -75,7 +78,7 @@ export default function WrittenWorkPage() {
             </div>
 
             {/* Card Content */}
-            <CardContent className="p-6 flex flex-col w-[25vw] h-[32vh]">
+            <CardContent className="p-6 flex flex-col w-[95%] h-[45%]">
               <h3 className="font-bold text-lg mb-3 text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2">
                 {project.title}
               </h3>

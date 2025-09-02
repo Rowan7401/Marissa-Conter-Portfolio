@@ -8,45 +8,45 @@ import { ArrowLeft, Play, Calendar, Clock } from "lucide-react"
 
 export default function MultimediaPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 text-white">
+    <div className="min-h-screen px-2 md:px-4 flex flex-col bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 text-white mt-16">
       <Navigation />
 
-      <div className="max-w-6xl pt-24 pb-2">
-        {/* Flex container for button + header */}
-        <div className="flex items-center justify-between mb-2">
-          {/* Back Button */}
-          <Button
-            asChild
-            variant="ghost"
-            className="text-white-600 hover:text-gray-900 flex items-center w-36 gap-2 ml-12"
-          >
-            <Link href="/work">
-              <ArrowLeft className="h-4 w-4 text-white font-bold" />
-              Back to My Work
-            </Link>
-          </Button>
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2 mx-auto">
 
-          {/* Header */}
-          <h1 className="mr-30 text-4xl lg:text-6xl h-24 text-transparent bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text font-bold">
+        {/* Flex container for button + header */}
+
+        {/* Back Button */}
+        <Button
+          asChild
+          variant="ghost"
+          className="text-white-600 hover:text-gray-900 flex items-center w-36 gap-2 mb-1 mt-4 md:mt-0 md:mb-24"
+        >
+          <Link href="/work">
+            <ArrowLeft className="h-4 w-4" />
+            Back to My Work
+          </Link>
+        </Button>
+
+        {/* Header */}
+        <div className="md:text-left animate-in fade-in slide-in-from-bottom duration-700">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-transparent bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text font-bold mt-0 md:mt-6 mb-2 md:mb-6 ml-8">
             Multimedia Projects
           </h1>
+          <p className="text-lg text-gray-600 max-w-2xl leading-relaxed text-white text-center md:mr-24">
+            Visual storytelling through video, photography, and audio projects,
+            showcasing dynamic narratives and creative content from my time at
+            Gonzaga University.
+          </p>
         </div>
 
-        {/* Subtitle */}
-        <p className="text-lg text-gray-600 max-w-2xl leading-relaxed text-white mx-auto text-center mr-16">
-          Visual storytelling through video, photography, and audio projects,
-          showcasing dynamic narratives and creative content from my time at
-          Gonzaga University.
-        </p>
       </div>
 
-
       {/* Project Grid */}
-      <div className="mx-auto mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-x-24 gap-y-12 justify-items-center">
+      <div className="mx-auto mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-x-2 md:gap-x-24 gap-y-12 justify-items-center">
         {multimediaPageSpecifics.map((project) => (
           <Card
             key={project.id}
-            className="group overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 bg-white border border-gray-200 hover:-translate-y-2"
+            className="w-[20rem] md:w-[25rem] group overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 bg-white border border-gray-200 hover:-translate-y-2"
           >
             {/* Image Section */}
             <div className="relative w-full h-64 overflow-hidden">
@@ -92,7 +92,7 @@ export default function MultimediaPage() {
             </div>
 
             {/* Card Content */}
-            <CardContent className="p-6 flex flex-col w-[25vw] h-[32vh]">
+            <CardContent className="ml-2 p-2 md:p-6 flex flex-col w-[95%] h-[45%]">
               <h3 className="font-bold text-lg mb-3 text-gray-900 group-hover:text-purple-600 transition-colors line-clamp-2">
                 {project.title}
               </h3>
@@ -126,7 +126,7 @@ export default function MultimediaPage() {
           <div className="text-white-600">Total Views</div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

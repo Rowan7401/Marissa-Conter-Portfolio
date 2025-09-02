@@ -9,33 +9,33 @@ import { Playfair_Display, Inter } from "next/font/google"
 const playfair = Playfair_Display({ subsets: ["latin"], weight: "700" })
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600"] })
 
-export default function HomePage() { 
+export default function HomePage() {
   return (
     <div className={`${inter.className} min-h-screen bg-gradient-to-br from-[#0d1b2a] via-[#1b263b] to-[#0d1b2a] text-white`}>
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative pt-40 pb-16">
+      <section className="relative pt-20 md:pt-40 pb-16">
         {/* Subtle texture overlay */}
         <div className="absolute inset-0 bg-[url('/noise-texture.png')] opacity-20 pointer-events-none"></div>
 
-        <div className="max-w-6xl mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-row justify-center mx-auto relative z-10">
+          <div className="grid md:grid-cols-2 ml-5 mr-5 md:mr-0 md:ml-54 gap-x-12 items-center">
             {/* Text Content */}
-            <div className="space-y-8 w-[39vw] animate-in fade-in slide-in-from-left duration-700">
-              <div className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent space-y-6">
-                <h1 className={`${playfair.className} text-6xl lg:text-7xl font-bold leading-tight`}>
+            <div className="space-y-4 md:space-y-8 w-[95%] md:w-[98%] animate-in fade-in slide-in-from-left duration-700">
+              <div className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent space-y-2 md:space-y-6">
+                <h1 className={`${playfair.className} text-4xl md:text-6xl font-bold leading-tight`}>
                   Marissa Conter
                 </h1>
 
                 <div className="space-y-3">
-                  <h2 className="text-2xl lg:text-3xl font-semibold text-emerald-100 italic">
+                  <h2 className="text-xl md:text-2xl font-semibold text-emerald-100 italic">
                     Reporter • Crime • Courts • Public Safety
                   </h2>
-                  <p className="text-xl text-gray-300 font-medium">
+                  <p className="text-lg md:text-xl text-gray-300 font-medium">
                     Breaking stories, uncovering truth, and bringing clarity to complex issues.
                   </p>
-                  <div className="flex items-center gap-3 text-lg font-semibold text-emerald-400">
+                  <div className="flex items-center gap-1 md:gap-3 text-lg font-semibold text-emerald-400">
                     <span className="w-3 h-3 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full"></span>
                     <a href="https://www.kitsapsun.com/" className="hover:underline">
                       Kitsap Sun
@@ -45,7 +45,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-emerald-500/20 shadow-lg">
+                <div className="max-w-[30rem] md:max-w-[20rem] flex items-center gap-3 p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-emerald-500/20 shadow-lg">
                   <Mail className="h-5 w-5 text-emerald-400" />
                   <a
                     href="mailto:marissaconter@gmail.com"
@@ -61,7 +61,7 @@ export default function HomePage() {
                 <Button
                   asChild
                   variant="outline"
-                  className="group bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-300 hover:to-teal-300 text-white text-xl shadow-lg w-54 h-12"
+                  className="group bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-300 hover:to-teal-300 text-white text-lg md:text-xl shadow-lg w-42 md:w-54 h-12"
                 >
                   <Link href="/work" className="flex items-center gap-2">
                     View My Work
@@ -71,7 +71,7 @@ export default function HomePage() {
                 <Button
                   asChild
                   variant="outline"
-                  className="border-emerald-400 text-emerald-400 hover:bg-emerald-500/70 text-xl shadow-lg w-54 h-12"
+                  className="border-emerald-400 text-emerald-400 hover:bg-emerald-500/70 text-lg md:text-xl shadow-lg w-34 md:w-54 h-12"
                 >
                   <Link href="/about">About Me</Link>
                 </Button>
@@ -79,8 +79,8 @@ export default function HomePage() {
             </div>
 
             {/* Photo */}
-            <div className="ml-24 relative animate-in fade-in slide-in-from-right duration-700 delay-300">
-              <div className="h-[28rem] w-full relative overflow-hidden rounded-3xl shadow-2xl ring-4 ring-emerald-400/20 hover:ring-emerald-400/40 transition-all duration-500">
+            <div className="w-[20rem] ml-4 mt-12 md:mt-0 relative animate-in fade-in slide-in-from-right duration-700 delay-300">
+              <div className="h-[32rem] w-[20rem] relative overflow-hidden rounded-3xl shadow-2xl ring-4 ring-emerald-400/20 hover:ring-emerald-400/40 transition-all duration-500">
                 <Image
                   src="/kitsap-sun-headshot.jpg"
                   alt="Marissa Conter - Journalist"
@@ -91,12 +91,13 @@ export default function HomePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-emerald-600/10 via-transparent to-transparent" />
               </div>
 
-              {/* Floating location badge */}
-              <div className="absolute -bottom-4 -right-32 bg-gradient-to-r from-emerald-500 to-teal-500 text-white p-4 mr-20 rounded-2xl shadow-xl border-4 border-white animate-in zoom-in duration-500 delay-700">
-                <p className="text-lg font-bold flex items-center gap-2">
-                  📍 Seattle, WA
-                </p>
-              </div>
+
+            </div>
+            {/* Floating location badge */}
+            <div className="absolute mt-134 ml-234 w-[12%] bg-gradient-to-r from-emerald-500 to-teal-500 text-white p-4 mr-20 rounded-2xl shadow-xl border-4 border-white animate-in zoom-in duration-500 delay-700">
+              <p className="text-lg font-bold flex items-center gap-2">
+                📍 Seattle, WA
+              </p>
             </div>
           </div>
         </div>

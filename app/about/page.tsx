@@ -11,15 +11,12 @@ export default function AboutPage() {
       <Navigation />
 
       {/* About Hero Section */}
-      <section className="pt-28 pb-16 px-6">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <section className="w-[95%] md:w-[98%] pt-28 pb-16 px-6">
+        <div className="ml-3 md:ml-54 mx-auto grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Column */}
           <div className="space-y-10 animate-in fade-in slide-in-from-left duration-700">
             <h1 className="text-6xl lg:text-7xl font-extrabold leading-tight">
-              About{" "}
-              <span className="bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">
-                Marissa
-              </span>
+              About Marissa
             </h1>
 
             <div className="space-y-6 text-lg text-gray-200 leading-relaxed">
@@ -76,7 +73,7 @@ export default function AboutPage() {
             {/* Floating badge */}
             <div className="absolute -bottom-4 ml-56 bg-gradient-to-r from-emerald-500 to-blue-500 text-white px-6 py-4 rounded-2xl shadow-xl 
                 border-4 border-white animate-in zoom-in duration-500 delay-700">
-              <p className="text-lg font-bold flex items-center gap-2">📍 Seattle, WA</p>
+              <p className="text-lg font-bold flex items-center gap-2">📍 Spokane, WA (Gonzaga)</p>
             </div>
           </div>
         </div>
@@ -114,7 +111,7 @@ export default function AboutPage() {
             >
               <CardContent className="p-8">
                 <item.icon className={`h-10 w-10 ${item.color} mx-auto mb-4`} />
-                <h3 className="font-semibold text-xl mb-3">{item.title}</h3>
+                <h3 className="font-semibold text-xl text-white mb-3">{item.title}</h3>
                 <p className="text-gray-300">{item.description}</p>
               </CardContent>
             </Card>

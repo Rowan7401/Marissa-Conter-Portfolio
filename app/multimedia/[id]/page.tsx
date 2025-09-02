@@ -22,8 +22,8 @@ export default function ProjectPage({ params }: Props) {
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 text-white"> 
       <Navigation />
 
-      <div className="p-6 max-w-5xl mx-auto mt-24">
-        <div className="bg-white/80 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-200 animate-in fade-in slide-in-from-bottom duration-700">
+      <div className="p-6 mx-auto mt-24">
+        <div className="w-[90vw] md:w-[70vw] bg-white/80 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-200 animate-in fade-in slide-in-from-bottom duration-700">
           {/* Title & Date */}
           <div className="text-center mb-8">
             <h1 className="text-4xl lg:text-5xl font-bold mb-3 text-gray-900">
@@ -73,20 +73,20 @@ export default function ProjectPage({ params }: Props) {
           )}
 
           {/* Description */}
-          <p className="text-gray-700 mb-8 text-lg leading-relaxed text-center max-w-3xl mx-auto">
+          <p className="bg-white/50 rounded-xl p-3 text-gray-700 mb-8 text-lg leading-relaxed text-center max-w-3xl md:w-[75%] w-[97%] mx-auto">
             {project.description}
           </p>
 
           {/* Dynamic Links */}
           {project.links && project.links.length > 0 && (
-            <div className="flex flex-col gap-4 items-center mb-10">
+            <div className="flex md:flex-row flex-col gap-4 justify-center items-center mb-10">
               {project.links.map((link, index) => (
                 <Link
                   key={index}
                   href={link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 bg-gradient-to-r from-purple-500 to-indigo-500 text-white rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300"
+                  className="px-6 py-3 bg-black/7 text-blue-400 underline rounded-full shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300"
                 >
                   {project.linkTitles[index]}
                 </Link>
@@ -95,7 +95,7 @@ export default function ProjectPage({ params }: Props) {
           )}
 
           {/* Navigation Buttons */}
-          <div className="flex justify-between items-center mt-10">
+          <div className="flex justify-between items-center mt-10 text-sm md:text-lg gap-x-2">
             {/* Previous Button */}
             {prevId ? (
               <Link
@@ -111,7 +111,7 @@ export default function ProjectPage({ params }: Props) {
             {/* Return to My Work */}
             <Link
               href="/multimedia"
-              className="px-5 py-3 rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-md hover:shadow-xl hover:scale-105 transition-transform"
+              className="px-5 py-3 rounded-xl md:rounded-full bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-md hover:shadow-xl hover:scale-105 transition-transform"
             >
               Return to My Multimedia Work
             </Link>
@@ -120,7 +120,7 @@ export default function ProjectPage({ params }: Props) {
             {nextId ? (
               <Link
                 href={`/multimedia/${nextId}`}
-                className="px-5 py-3 rounded-full bg-gray-200 text-gray-800 hover:bg-gray-300 hover:scale-105 transition-transform"
+                className="px-5 py-3 rounded-xl md:rounded-full bg-gray-200 text-gray-800 hover:bg-gray-400 hover:scale-105 transition-transform"
               >
                 Next Project →
               </Link>

@@ -75,7 +75,7 @@ export const writtenWorkSpecifics = [
         + " myself and my cultural identity through interviews with my grandmother, mother and me. It was a challenging piece to write since as a seasoned news writer, I am used to"
         + " being objective and somewhat removed from my articles, and this piece is the exact opposite.",
         shortDescription: "Personal narrative story highlighting family, identity formation through childhood, and acceptance.",
-        date: "2025-02-16",
+        date: "2024-02-16",
         type: "Narrative Article",
         duration: "1 Article",
         thumbnail: "/marissa-EIC.jpg",
