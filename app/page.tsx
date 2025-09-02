@@ -22,34 +22,34 @@ export default function HomePage() {
         <div className="flex flex-row justify-center mx-auto relative z-2">
           <div className="grid md:grid-cols-2 ml-5 mr-5 md:mr-0 md:ml-54 gap-x-12 items-center">
             {/* Text Content */}
-            <div className="space-y-4 md:space-y-8 w-[95%] md:w-[98%] animate-in fade-in slide-in-from-left duration-700">
-              <div className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent space-y-2 md:space-y-6">
-                <h1 className={`${playfair.className} text-4xl md:text-6xl font-bold leading-tight`}>
+            <div className="space-y-4 md:space-y-8 max-w-[98%] animate-in fade-in slide-in-from-left duration-700">
+              <div className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent space-y-2 md:space-y-3">
+                <h1 className={`${playfair.className} text-5xl md:text-7xl font-bold leading-tight`}>
                   Marissa Conter
                 </h1>
 
                 <div className="space-y-3">
-                  <h2 className="text-xl md:text-2xl font-semibold text-emerald-100 italic">
-                    Reporter • Crime • Courts • Public Safety
+                  <h2 className="text-center md:text-left text-md md:text-2xl font-semibold text-emerald-100 italic">
+                    Crime • Courts • Public Safety • Local Features
                   </h2>
-                  <p className="text-lg md:text-xl text-gray-300 font-medium">
+                  <p className="text-md md:text-xl text-gray-300 font-medium">
                     Breaking stories, uncovering truth, and bringing clarity to complex issues.
                   </p>
-                  <div className="flex items-center gap-1 md:gap-3 text-lg font-semibold text-emerald-400">
-                    <span className="w-3 h-3 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full"></span>
-                    <a href="https://www.kitsapsun.com/" className="hover:underline">
-                      Kitsap Sun
+                  <div className="flex items-center gap-0 md:gap-3 text-lg font-semibold text-emerald-400">
+                    <span className="md:w-3 md:h-3 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full"></span>
+                    <a href="https://www.kitsapsun.com/" className="hover:underline w-[15rem]">
+                      Reporter-Kitsap Sun
                     </a>
-                    <h2 className="text-gray-400 pl-2">|</h2>
-                    <h2 className="text-gray-400 pl-2">A Gannett Newspaper</h2>
+                    <h2 className="hidden md:flex text-gray-400 pl-2">|</h2>
+                    <h2 className="text-gray-400 md:pl-2">A Gannett Newspaper</h2>
                   </div>
                 </div>
 
-                <div className="max-w-[30rem] md:max-w-[20rem] flex items-center gap-3 p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-emerald-500/20 shadow-lg">
+                <div className="w-[20rem] md:w-[33rem] flex items-center gap-3 p-2 mt-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-emerald-500/20 shadow-lg">
                   <Mail className="h-5 w-5 text-emerald-400" />
                   <a
                     href="mailto:marissaconter@gmail.com"
-                    className="text-lg text-white hover:text-emerald-300 transition-colors font-medium"
+                    className="text-sm md:text-lg text-white hover:text-emerald-300 transition-colors font-medium"
                   >
                     marissaconter@gmail.com
                   </a>
