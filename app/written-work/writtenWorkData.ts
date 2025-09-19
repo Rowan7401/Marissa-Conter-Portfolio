@@ -2,7 +2,7 @@ export const writtenWorkSpecifics = [
     {
         id: 1,
         title: "Breaking News Stories",
-        shortDescription: "I inform the public in a timely manner about breaking crime, safety, and natural disaster stories.",
+        shortDescription: "I inform the public in a timely manner about breaking crime, safety and natural disaster stories.",
         description: "As a reporter covering crime, staying on top of breaking news is essential. I follow local law enforcement agencies like"
         + " police departments and fire stations on social media, check a list of arrests daily and read cases that are filed in court. I have developed"
         + " relationships with law enforcement and other county/municipal departments that I am able to contact promptly for information and they know to contact me in these incidents."
@@ -13,8 +13,8 @@ export const writtenWorkSpecifics = [
         date: "2025-07-18",
         type: "Natural Disaster Articles",
         duration: "7 Articles",
-        thumbnail: "/mason-county-fires.jpg",
-        images: ["/mason-county-fires.jpg", "/hamma-fire.jpg"],
+        thumbnail: "/written-work/mason-county-fires.jpg",
+        images: ["/written-work/mason-county-fires.jpg", "/written-work/hamma-fire.jpg"],
         tiktoks: [],
         linkTitles: ["First article in fire series", "Most recent article in series"],
         links: ["https://www.kitsapsun.com/story/news/2025/07/09/toonerville-fire-spreads-near-belfair-more-evacuation-notices-mason-county/84520740007/", 
@@ -36,8 +36,8 @@ export const writtenWorkSpecifics = [
         date: "2025-01-02",
         type: "Analytical Crime Stories",
         duration: "1 Article",
-        thumbnail: "/bremerton-pd.jpg",
-        images: ["/crime-march.jpg", "/bremerton-pd.jpg"],
+        thumbnail: "/written-work/bremerton-pd.jpg",
+        images: ["/written-work/crime-march.jpg", "/written-work/bremerton-pd.jpg"],
         tiktoks: [],
         linkTitles: ["Bremerton PD emphasizing drug arrests again"],
         links: ["https://www.kitsapsun.com/story/news/2025/05/18/washington-drug-law-change-leading-to-more-arrests-treatment-referrals/82519745007/"]
@@ -52,7 +52,7 @@ export const writtenWorkSpecifics = [
         + " necessary information to understand the topic. In my opinion, features help challenge me as a writer during times when I can grow complacent in news writing.\n\n"
         + "Vietnam Refugee's Cultural Food Businesses\n Getting to write about Duc Pham’s business and family’s story stuck with me for many reasons. That feature was my most"
         + " read article in May by a landslide, surpassing all the other breaking news/crime related pieces I wrote that month. It’s rare that a feature exceeds breaking news in page views,"
-        + " but that’s a testament to the impact of his family’s story on our readers.\n"
+        + " but that’s a testament to the impact of his family’s story on our readers.\n\n"
         + "I have always enjoyed feature writing, but usually the news briefs that take me an hour or less to write up always outpace the features I write, which can admittedly be disheartening"
         + " at times in comparison to the time and energy they take to write. Getting the opportunity to cover this story not only reaffirmed my passion for features and journalism, but it was also"
         + " a reminder that stories like Duc Pham’s do resonate with broad audiences, despite usual trends.",
@@ -60,8 +60,8 @@ export const writtenWorkSpecifics = [
         date: "2025-05-02",
         type: "Local Feature Articles",
         duration: "2 Articles",
-        thumbnail: "/viking-ship.jpg",
-        images: ["/duc-pham.jpg", "/trump-protest.jpg"],
+        thumbnail: "/written-work/viking-ship.jpg",
+        images: ["/written-work/duc-pham.jpg", "/written-work/trump-protest.jpg"],
         tiktoks: [],
         linkTitles: ["Once a refugee to Bremerton from Vietnam, now leading a booming business", "Bainbridge Island couple revives WWII Norwegian movement to protest Trump"],
         links: ["https://www.kitsapsun.com/story/news/2025/05/15/origins-in-kitsap-lead-to-what-the-pho-and-phonomenal-foods/83351969007/", 
@@ -74,12 +74,12 @@ export const writtenWorkSpecifics = [
         + " to give those who wanted to experiment with utilizing literary devices in their journalistic work. I published this piece as an example, which is a personal essay about"
         + " myself and my cultural identity through interviews with my grandmother, mother and me. It was a challenging piece to write since as a seasoned news writer, I am used to"
         + " being objective and somewhat removed from my articles, and this piece is the exact opposite.",
-        shortDescription: "Personal narrative story highlighting family, identity formation through childhood, and acceptance.",
+        shortDescription: "Personal narrative story highlighting family, identity formation through childhood and acceptance.",
         date: "2024-02-16",
         type: "Narrative Article",
         duration: "1 Article",
-        thumbnail: "/marissa-EIC.jpg",
-        images: ["/marissa-EIC.jpg"],
+        thumbnail: "/written-work/marissa-EIC.jpg",
+        images: ["/written-work/marissa-EIC.jpg"],
         tiktoks: [],
         linkTitles: ["Spring editor-in-chief for The Gonzaga Bulletin reflects on family"],
         links: ["https://www.gonzagabulletin.com/news/spring-editor-in-chief-for-the-gonzaga-bulletin-reflects-on-family/article_7285e0d2-cbf7-11ee-aa01-8b7ca2edbbed.html"]
@@ -93,23 +93,23 @@ export const writtenWorkSpecifics = [
         date: "2022-02-09",
         type: "Informative Article",
         duration: "1 Article",
-        thumbnail: "/Magenta-florence.jpg",
-        images: ["/Magenta-florence.jpg", "/boticelli-madonna.jpg"],
+        thumbnail: "/written-work/Magenta-florence.jpg",
+        images: ["/written-work/Magenta-florence.jpg", "/written-work/boticelli-madonna.jpg"],
         tiktoks: [],
         linkTitles: ["The Accademia’s Renovated ‘Sala del Colosso’ Unveiled"],
         links: ["https://www.magentaflorence.com/the-accademias-renovated-sala-del-colosso-unveiled/"]
     },
     {
         id: 6,
-        title: "Freelance-work: The Spokesman-Review",
+        title: "The Spokesman-Review",
         description: "I freelanced for The Spokesman-Review a few times while I was a student in Spokane. For this article, I attended and covered a press release during"
         + " which a local nonprofit announced a new road race to raise money for cancer research and resources.",
         shortDescription: "Free-lance article for newspaper local to my college city, The Spokesman-Review of Spokane, Washington.",
         date: "2023-05-17",
         type: "Event Coverage Article",
         duration: "1 Article",
-        thumbnail: "/Spokesman-review.jpg",
-        images: ["/spokane-man-news.jpg", "/blvd-race.jpg"],
+        thumbnail: "/written-work/Spokesman-review.jpg",
+        images: ["/written-work/spokane-man-news.jpg", "/written-work/blvd-race.jpg"],
         tiktoks: [],
         linkTitles: ["New road race hopes to bring 5,000 to the streets of downtown"],
         links: ["https://www.spokesman.com/stories/2023/may/11/new-road-race-hopes-to-bring-5000-to-the-streets-o/"]

@@ -17,9 +17,6 @@ export default function WorkPage() {
           <h1 className="text-5xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300 font-extrabold leading-tight mb-6 ">
             My Work
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Explore stories told through multiple mediums—crafted to inform, engage, and inspire.
-          </p>
         </div>
       </section>
 
@@ -35,7 +32,7 @@ export default function WorkPage() {
             <Card className="group bg-[#111827] border border-gray-700 hover:shadow-2xl hover:border-purple-500 transition-all duration-500 rounded-2xl overflow-hidden">
               <div className="aspect-video relative overflow-hidden">
                 <Image
-                  src="/multimedia-journalism-video-setup.png"
+                  src="/multimedia/multimediaCardIcon.webp"
                   alt="Multimedia Journalism Work"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -52,19 +49,16 @@ export default function WorkPage() {
                   </span>
                 </div>
                 <h3 className="font-bold text-xl mb-3 text-white">Video Storytelling & More</h3>
-                <p className="text-gray-400 leading-relaxed">
-                  Compelling visual narratives that bring complex stories to life through video and photography.
-                </p>
               </CardContent>
             </Card>
-          </Link>
+          </Link> 
 
           {/* Social Media Card */}
           <Link href="/social-media" className="block">
             <Card className="group bg-[#111827] border border-gray-700 hover:shadow-2xl hover:border-pink-500 transition-all duration-500 rounded-2xl overflow-hidden">
               <div className="aspect-video relative overflow-hidden">
                 <Image
-                  src="/gonzaga-bulletin-logo.jpg"
+                  src="/social-media/socialMediaCardIcon.png"
                   alt="Social Media Strategy Work"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -81,9 +75,6 @@ export default function WorkPage() {
                   </span>
                 </div>
                 <h3 className="text-white font-bold text-xl mb-3">Digital Engagement</h3>
-                <p className="text-gray-400 leading-relaxed">
-                  Strategic social media campaigns that amplify important stories and engage communities.
-                </p>
               </CardContent>
             </Card>
           </Link>
@@ -93,7 +84,7 @@ export default function WorkPage() {
             <Card className="group bg-[#111827] border border-gray-700 hover:shadow-2xl hover:border-blue-500 transition-all duration-500 rounded-2xl overflow-hidden">
               <div className="aspect-video relative overflow-hidden">
                 <Image
-                  src="/journalist-laptop-notebook-coffee.png"
+                  src="/written-work/writtenWorkCardIcon.png"
                   alt="Written Journalism Work"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -110,9 +101,6 @@ export default function WorkPage() {
                   </span>
                 </div>
                 <h3 className="text-white font-bold text-xl mb-3">In-Depth Reporting</h3>
-                <p className="text-gray-400 leading-relaxed">
-                  Investigative pieces and feature stories that dive deep into the issues that matter.
-                </p>
               </CardContent>
             </Card>
           </Link>

@@ -17,7 +17,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative pt-20 md:pt-40 pb-16">
         {/* Subtle texture overlay */}
-        <div className="absolute inset-0 bg-[url('/noise-texture.png')] opacity-20 pointer-events-none"></div>
+        <div className="absolute inset-0 opacity-20 pointer-events-none"></div>
 
         <div className="flex flex-row justify-center mx-auto relative z-2">
           <div className="grid md:grid-cols-2 ml-5 mr-5 md:mr-0 md:ml-54 gap-x-12 items-center">
@@ -29,15 +29,12 @@ export default function HomePage() {
                 </h1>
 
                 <div className="space-y-3">
-                  <h2 className="text-center md:text-left text-md md:text-2xl font-semibold text-emerald-100 italic">
+                  <h2 className="text-center md:text-left text-md md:text-2xl font-semibold text-emerald-100 italic w-[90vw] md:w-[35rem]">
                     Crime • Courts • Public Safety • Local Features
                   </h2>
-                  <p className="text-md md:text-xl text-gray-300 font-medium">
-                    Breaking stories, uncovering truth, and bringing clarity to complex issues.
-                  </p>
                   <div className="flex items-center gap-0 md:gap-3 text-lg font-semibold text-emerald-400">
                     <span className="md:w-3 md:h-3 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full"></span>
-                    <a href="https://www.kitsapsun.com/" className="hover:underline w-[15rem]">
+                    <a href="https://www.kitsapsun.com/" className="hover:underline w-[15rem] md:w-[12rem]">
                       Reporter-Kitsap Sun
                     </a>
                     <h2 className="hidden md:flex text-gray-400 pl-2">|</h2>
@@ -80,7 +77,7 @@ export default function HomePage() {
 
             {/* Photo */}
             <div className="w-[20rem] ml-4 mt-12 md:mt-0 relative animate-in fade-in slide-in-from-right duration-700 delay-300">
-              <div className="h-[32rem] w-[20rem] relative overflow-hidden rounded-3xl shadow-2xl ring-4 ring-emerald-400/20 hover:ring-emerald-400/40 transition-all duration-500">
+              <div className="h-[32rem] w-[20rem] relative overflow-hidden shadow-2xl ring-4 ring-emerald-400/20 hover:ring-emerald-400/40 transition-all duration-500">
                 <Image
                   src="/kitsap-sun-headshot.jpg"
                   alt="Marissa Conter - Journalist"

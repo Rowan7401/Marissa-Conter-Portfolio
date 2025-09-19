@@ -82,10 +82,7 @@ export default function WrittenWorkPage() {
               <h3 className="font-bold text-lg mb-3 text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2">
                 {project.title}
               </h3>
-              <p className="text-gray-600 text-sm mb-4 line-clamp-3">
-                {project.shortDescription}
-              </p>
-
+        
               <Button
                 asChild
                 className="mt-auto w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white hover:shadow-lg transition-shadow"

@@ -30,7 +30,8 @@ export default function SocialMediaPage() {
             Social Media Content
           </h1>
           <p className="text-lg text-gray-600 md:max-w-[75%] max-w-[97%] leading-relaxed text-white text-center ml-2 md:ml-24">
-            As editor of my school newspaper, I crafted and managed social media strategies, creating engaging posts across Instagram, Twitter/X, and Facebook, while publishing articles on our newspaper's website.
+            As editor of my school newspaper, I was responsible for creating posts on Instagram, Twitter/X and Facebook for each article.
+             I was also responsible for posting articles on our newspaper's website.
           </p>
         </div>
       </div>
@@ -40,7 +41,7 @@ export default function SocialMediaPage() {
         {socialMediaSpecifics.map((project) => (
           <Card
             key={project.id}
-            className="w-[20rem] md:w-[25rem] group rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 bg-white border border-gray-200 hover:-translate-y-2"
+            className="w-[20rem] md:w-[25rem] group shadow-md hover:shadow-2xl transition-all duration-500 bg-white border border-gray-200 hover:-translate-y-2"
           >
             {/* Image Section */}
             <div className="relative w-full h-64 overflow-hidden">
@@ -81,9 +82,6 @@ export default function SocialMediaPage() {
               <h3 className="font-bold text-lg mb-3 text-gray-900 group-hover:text-pink-600 transition-colors line-clamp-2">
                 {project.title}
               </h3>
-              <p className="text-gray-600 text-sm mb-4 line-clamp-3">
-                {project.shortDescription}
-              </p>
 
               <Button
                 asChild

@@ -48,7 +48,7 @@ export default function ProjectPage({ params }: Props) {
                       key={index}
                       src={imgSrc}
                       alt={`${project.title} image ${index + 1}`}
-                      className="object-cover w-80 h-[40vh] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-500"
+                      className="object-cover w-80 h-[40vh] shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-500"
                     />
                   )
               )}
@@ -73,7 +73,7 @@ export default function ProjectPage({ params }: Props) {
           )}
 
           {/* Description */}
-          <p className="text-gray-700 bg-white/50 rounded-xl p-3 text-gray-700 mb-8 text-lg leading-relaxed text-center md:w-[75%] w-[97%] mx-auto whitespace-pre-line">
+          <p className="text-gray-700 bg-white/50 rounded-xl p-3 text-gray-700 mb-8 text-lg leading-relaxed text-left md:w-[75%] w-[97%] mx-auto whitespace-pre-line">
             {project.description}
           </p>
 

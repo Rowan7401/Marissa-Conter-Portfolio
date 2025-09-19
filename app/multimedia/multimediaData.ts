@@ -9,8 +9,8 @@ export const multimediaPageSpecifics = [
         date: "2023-03-15",
         type: "Instagram Account",
         duration: "6 posts",
-        thumbnail: "/Glossier-insta.jpg",
-        images: ["/Glossier-insta.jpg", "/sephora_glossier_graphic.jpg"],
+        thumbnail: "/multimedia/Glossier-insta.jpg",
+        images: ["/multimedia/Glossier-insta.jpg", "/multimedia/sephora_glossier_graphic.jpg"],
         tiktoks: [],
         linkTitles: ["Our six social media posts", "Our posting schedule for Glossier", "Our findings from the project"],
         links: ["https://www.instagram.com/glossier4collett/", "https://docs.google.com/spreadsheets/d/1BqNuS3IxWn0bxMNX0SuxGc-Rm0uhk5vHfHQNYgVa9ro/edit#gid=0", 
@@ -25,7 +25,7 @@ export const multimediaPageSpecifics = [
         date: "2023-02-10",
         type: "TikTok Series",
         duration: "2 Videos",
-        thumbnail: "/tik-tok-preview.jpg",
+        thumbnail: "multimedia/tik-tok-preview.jpg",
         images: [],
         tiktoks: ["https://www.tiktok.com/embed/https://video.wixstatic.com/video/14b836_13677e0dabee4073993f0aa3a2b3c780/file", "https://video.wixstatic.com/video/14b836_13677e0dabee4073993f0aa3a2b3c780/file"],
         linkTitles: [],
@@ -41,8 +41,8 @@ export const multimediaPageSpecifics = [
         date: "2023-04-15",
         type: "Podcast Episode",
         duration: "32:45",
-        thumbnail: "/podcast girl.jpg",
-        images: ["/podcast girl.jpg"],
+        thumbnail: "/multimedia/podcast girl.jpg",
+        images: ["/multimedia/podcast girl.jpg"],
         tiktoks: [],
         linkTitles: ["Script and episode summary", "Listen to the episode"],
         links: ["https://docs.google.com/document/d/1B85mO8NTYWNViN9EKpRkW90f-QwmSX4XlylZBmcbt20/edit", "https://gonzagau-my.sharepoint.com/:u:/g/personal/mconter_zagmail_gonzaga_edu/EYM6mUOOz3xHpW2CLFjWoHkBq8lq8HYsCO9I4jbG3efwsw?e=Issfcz"]
@@ -56,12 +56,13 @@ export const multimediaPageSpecifics = [
         date: "2023-02-28",
         type: "Write Up & Visual Aid",
         duration: "7 slides",
-        thumbnail: "/Devon Lee Carlson.jpg",
-        images: ["/Devon Lee Carlson.jpg"],
+        thumbnail: "/multimedia/Devon Lee Carlson.jpg",
+        images: ["/multimedia/Devon Lee Carlson.jpg"],
         tiktoks: [],
-        linkTitles: ["https://www.canva.com/design/DAFaMjlh-L4/8nacUPpdcKScQBjEBKYvcQ/edit?utm_content=DAFaMjlh-L4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-            "https://docs.google.com/document/d/1eoZME4XbXQA4MWAWD0RX1TXEq-dJwKKRkHz22JsttnY/edit"
+        linkTitles: ["Slideshow about Devon Lee Carlson",
+            "Write-up of our findings"
         ],
-        links: []
+        links: ["https://www.canva.com/design/DAFaMjlh-L4/8nacUPpdcKScQBjEBKYvcQ/edit?utm_content=DAFaMjlh-L4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+            "https://docs.google.com/document/d/1eoZME4XbXQA4MWAWD0RX1TXEq-dJwKKRkHz22JsttnY/edit"]
     },
 ];

@@ -16,28 +16,22 @@ export default function AboutPage() {
           {/* Left Column */}
           <div className="space-y-10 animate-in fade-in slide-in-from-left duration-700">
             <h1 className="text-6xl lg:text-7xl font-extrabold leading-tight">
-              About Marissa
+              About Me
             </h1>
 
             <div className="space-y-6 text-lg text-gray-200 leading-relaxed">
               <p>
-                I work as a reporter for the{" "}
-                <span className="font-bold text-emerald-400 hover:text-emerald-300 transition">
-                  <a href="https://www.kitsapsun.com/">Kitsap Sun</a>
-                </span>
-                , covering crime, courts, public safety threats, and local
-                features. My journalism journey began early in school, where I
-                became editor-in-chief my senior year.
+                I work as a reporter for the Kitsap Sun, covering crime, courts, public safety threats and local
+                features. This is my first position since I graduated Magna Cum Laude from Gonzaga University in
+                 May 2024 with a Bachelor of Arts, where I majored in journalism and minored in writing.
               </p>
               <p>
-                I graduated <span className="text-emerald-400 font-semibold">Magna Cum Laude</span>{" "}
-                from Gonzaga University in May 2024 with a BA in Journalism and a minor in Writing.
+                My journalism journey began early in school at my college newspaper where I started as a staff writer
+                 my freshman year and graduated as editor-in-chief.
               </p>
               <p>
-                During my studies, I served as writing editor for the yearbook
-                and completed an editorial internship abroad in Florence. I’m
-                passionate about storytelling and giving a voice to important
-                issues.
+                I was also the writing editor for my school's yearbook, and during my time abroad in Florence, I had an
+                 internship for an English-speaking publication. I am passionate about writing and getting to tell stories that are important!
               </p>
             </div>
 
@@ -53,14 +47,14 @@ export default function AboutPage() {
                 </a>
               </Button>
               <Button className="px-8 py-4 text-lg font-semibold bg-white text-gray-900 border border-gray-300 hover:bg-gray-100 shadow-xl rounded-xl">
-                <Link href="/work">View My Work</Link>
+                <Link href="https://www.kitsapsun.com/search/?q=marissa+conter">View My Kitsap Sun Work</Link>
               </Button>
             </div>
           </div>
 
           {/* Right Column - Image */}
           <div className="relative animate-in fade-in slide-in-from-right duration-700 delay-300">
-            <div className="w-80 h-130 relative overflow-hidden rounded-3xl shadow-2xl ring-4 ring-white/20">
+            <div className="w-80 h-130 relative overflow-hidden shadow-2xl ring-4 ring-white/20">
               <Image
                 src="/grad-headshot.jpg"
                 alt="Marissa Conter Professional Photo"
@@ -93,7 +87,7 @@ export default function AboutPage() {
             {
               icon: Calendar,
               title: "Experience",
-              description: "3+ Years in Journalism",
+              description: "5+ Years in Journalism",
               color: "text-blue-400",
               delay: "delay-400",
             },
@@ -132,9 +126,9 @@ export default function AboutPage() {
               <ul className="space-y-3 text-gray-300">
                 {[
                   "Investigative journalism",
-                  "Feature writing",
-                  "Interview techniques",
-                  "Fact-checking and verification",
+                  "Breaking news writing",
+                  "Interview skills",
+                  "Fact-checking and data",
                   "AP Style proficiency",
                 ].map((skill, i) => (
                   <li key={i} className="flex items-center gap-3">
@@ -168,49 +162,6 @@ export default function AboutPage() {
               </ul>
             </CardContent>
           </Card>
-        </div>
-      </section>
-
-      {/* Education */}
-      <section className="max-w-6xl mx-auto px-6 pb-20">
-        <h2 className="text-4xl font-bold text-center mb-12">Education & Experience</h2>
-        <div className="max-w-4xl mx-auto space-y-8">
-          {[
-            {
-              title: "Public Safety Reporter",
-              institution: "Kitsap Sun | Gannett",
-              detail: "November 2024 - Present",
-              gradient: "from-emerald-400 to-blue-500",
-            },
-            {
-              title: "Bachelor of Arts in Journalism | Minor in Writing",
-              institution: "Gonzaga University, Spokane, WA",
-              detail: "Graduated Magna Cum Laude, 2024",
-              gradient: "from-blue-400 to-indigo-500",
-            },
-            {
-              title: "Editor-in-Chief",
-              institution: "The Gonzaga Bulletin",
-              detail: "January 2024 - May 2024",
-              gradient: "from-indigo-400 to-purple-500",
-            },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className={`border-l-4 pl-8 py-4 rounded-r-lg bg-white/5 hover:bg-white/10 transition-colors duration-300 border-gradient-to-r ${item.gradient}`}
-              style={{
-                borderImage: `linear-gradient(to bottom, ${item.gradient.replace(
-                  /from-|to-/g,
-                  ""
-                )}) 1`,
-                borderImageSlice: 1,
-              }}
-            >
-              <h3 className="font-semibold text-xl mb-2">{item.title}</h3>
-              <p className="text-gray-300">{item.institution}</p>
-              <p className="text-sm text-gray-400 mt-1">{item.detail}</p>
-            </div>
-          ))}
         </div>
       </section>
     </div>

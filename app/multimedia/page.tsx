@@ -33,9 +33,7 @@ export default function MultimediaPage() {
             Multimedia Projects
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl leading-relaxed text-white text-center md:mr-24">
-            Visual storytelling through video, photography, and audio projects,
-            showcasing dynamic narratives and creative content from my time at
-            Gonzaga University.
+              These are the projects I created as a college student, ranging from focuses on social media, creating a podcast episode and posting a blog.
           </p>
         </div>
 
@@ -46,7 +44,7 @@ export default function MultimediaPage() {
         {multimediaPageSpecifics.map((project) => (
           <Card
             key={project.id}
-            className="w-[20rem] md:w-[25rem] group overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 bg-white border border-gray-200 hover:-translate-y-2"
+            className="w-[20rem] md:w-[25rem] group overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 bg-white border border-gray-200 hover:-translate-y-2"
           >
             {/* Image Section */}
             <div className="relative w-full h-64 overflow-hidden">
@@ -96,10 +94,7 @@ export default function MultimediaPage() {
               <h3 className="font-bold text-lg mb-3 text-gray-900 group-hover:text-purple-600 transition-colors line-clamp-2">
                 {project.title}
               </h3>
-              <p className="text-gray-600 text-sm mb-4 line-clamp-3">
-                {project.shortDescription}
-              </p>
-
+              
               <Button
                 asChild
                 className="mt-auto w-full bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:shadow-lg transition-shadow"

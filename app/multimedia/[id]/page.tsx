@@ -23,7 +23,7 @@ export default function ProjectPage({ params }: Props) {
       <Navigation />
 
       <div className="p-6 mx-auto mt-24">
-        <div className="w-[90vw] md:w-[70vw] bg-white/80 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-200 animate-in fade-in slide-in-from-bottom duration-700">
+        <div className="w-[90vw] md:w-[70vw] bg-white/80 backdrop-blur-lg shadow-2xl p-8 border border-gray-200 animate-in fade-in slide-in-from-bottom duration-700">
           {/* Title & Date */}
           <div className="text-center mb-8">
             <h1 className="text-4xl lg:text-5xl font-bold mb-3 text-gray-900">
@@ -48,7 +48,7 @@ export default function ProjectPage({ params }: Props) {
                       key={index}
                       src={imgSrc}
                       alt={`${project.title} image ${index + 1}`}
-                      className="object-cover w-80 h-[40vh] rounded-xl shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-500"
+                      className="object-cover w-80 h-[40vh] shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-500"
                     />
                   )
               )}
@@ -66,14 +66,14 @@ export default function ProjectPage({ params }: Props) {
                   height="500"
                   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
                   allowFullScreen
-                  className="rounded-xl shadow-md hover:shadow-lg transition-shadow"
+                  className="shadow-md hover:shadow-lg transition-shadow"
                 ></iframe>
               ))}
             </div>
           )}
 
           {/* Description */}
-          <p className="bg-white/50 rounded-xl p-3 text-gray-700 mb-8 text-lg leading-relaxed text-center max-w-3xl md:w-[75%] w-[97%] mx-auto">
+          <p className="bg-white/50 rounded-xl p-3 text-gray-700 mb-8 text-lg leading-relaxed text-left max-w-3xl md:w-[75%] w-[97%] mx-auto">
             {project.description}
           </p>
 
