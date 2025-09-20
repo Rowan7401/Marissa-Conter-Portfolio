@@ -105,22 +105,6 @@ export default function MultimediaPage() {
           </Card>
         ))}
       </div>
-
-      {/* Stats Section */}
-      <div className="grid md:grid-cols-3 gap-8 mt-20 pt-12 border-t border-gray-200 text-center">
-        <div>
-          <div className="text-4xl font-bold text-white-900 mb-2">25+</div>
-          <div className="text-white-600">Video Projects</div>
-        </div>
-        <div>
-          <div className="text-4xl font-bold text-white-900 mb-2">500+</div>
-          <div className="text-white-600">Photos Published</div>
-        </div>
-        <div>
-          <div className="text-4xl font-bold text-white-900 mb-2">2.5M</div>
-          <div className="text-white-600">Total Views</div>
-        </div>
-      </div>
     </div >
   )
 }

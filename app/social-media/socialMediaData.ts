@@ -1,12 +1,12 @@
 export const socialMediaSpecifics = [
     {
         id: 1,
-        title: "Student Run Boba and Taiyaki Shop: Gonzaga Bulletin",
+        title: "High Performing Post: Student Run Taiyaki & Boba Shop",
         shortDescription: "Written article with accompanying high performing Instagram post for student run business near campus.",
-        description: "This article I wrote about a student opening a business right next to campus did really well on our social media because we tagged the business"
+        description: "This article I wrote about a student opening a business right next to campus did really well on our social media because we tagged the business'"
         + " instagram profile as well as the student's personal account, so they could repost the post on their respective accounts and reach a larger audience."
         + " The university's official Instagram account also reposted it and commented on the post.",
-        date: "2023-04-28",
+        date: "2023-04-27",
         type: "High Performing Instagram Post",
         duration: "3 photos & 1 article",
         thumbnail: "/social-media/gu-boba-thumbnail.jpg",
@@ -19,9 +19,10 @@ export const socialMediaSpecifics = [
     {
         id: 2,
         title: "Promoting Content Utilizing Diverse Platforms",
-        description: "Before I was Editor-In-Chief, our video team were producing videos that were being posted to a YouTube account that was going unnoticed."
-        + " In order to better promote this content, I instructed digital editors to start posting the videos on our Instagram as well, which had the largest following out of our social media accounts."
-        + " When I first became an editor, I pitched a street sweep style segment that approached students on campus who wore headphones and asked \"What are you listening to?\" building off of a viral trend on TikTok.",
+        description: "Before I was Editor-In-Chief, our video team were producing videos that were being posted to a YouTube account that was going unnoticed. In order to better promote this content,"
+        + " I instructed digital editors to start posting the videos on our Instagram as well, which had the largest following out of our social media accounts.\n\n"
+        + "When I first became an editor, I pitched a street sweep style segment that approached students on campus who wore headphones and asked \"What are you listening to?\" building off of a viral"
+        + " trend on TikTok.",
         shortDescription: "Boosted engagement on the GU Bullentin's projects, taking advantage of viral TikTok trends.",
         date: "2024-01-02",
         type: "Multiple Platforms",
@@ -35,9 +36,8 @@ export const socialMediaSpecifics = [
     {
         id: 3,
         title: "Increasing DEI Visibility",
-        description: "In order to support our mission to tell stories representative of diverse perspectives, I created a new section on our newspaper's website where each article,"
-        + " regardless of original section, that featured Diversity, Equity and Inclusion subject matter was tagged into to increase their visibility. In addition, there was a weekly"
-        + " DEI spotlight posted to our Instagram account.",
+        description: "In order to support our mission to tell stories representative of diverse perspectives, I created a new section on our newspaper's website where each article, regardless of original section,"
+        + " that featured Diversity, Equity and Inclusion subject matter was tagged into to increase their visibility. In addition, there was a weekly DEI spotlight posted to our Instagram account.",
         shortDescription: "Spotlighted stories with diverse perspectives by creating new DEI focused section on website.",
         date: "2024-01-02",
         type: "Articles & Instagram Posts",

@@ -7,7 +7,7 @@ export const writtenWorkSpecifics = [
         + " police departments and fire stations on social media, check a list of arrests daily and read cases that are filed in court. I have developed"
         + " relationships with law enforcement and other county/municipal departments that I am able to contact promptly for information and they know to contact me in these incidents."
         + " Then, it is my job to write up a brief with details necessary to inform the public in a timely manner."
-        + "\n\n Over the month of July, I wrote seven articles on fires in Mason County, as frequent updates were important due to their proximity to Kitsap communities."
+        + "\n\n Mason County Fires:\n Over the month of July, I wrote seven articles on fires in Mason County, as frequent updates were important due to their proximity to Kitsap communities."
         + " Each week, I checked Mason County fire departments' social media pages, press releases and other online resources to monitor updates and took the initiative to"
         + " write briefs that built off context established in my previous content. These articles were some of my top-performing stories of the month.",
         date: "2025-07-18",
@@ -31,7 +31,16 @@ export const writtenWorkSpecifics = [
         + "***Content warning: article includes mentions of sexual assault***\n"
         + "This story was an examination of Washington state's resources for crime victims, in light of the state budget deficit and expected cuts to programs including these resources."
         + " Not only does it provide readers with an understanding of programs that are helping people coping with trauma and loss, it also includes narrative storytelling elements stemming"
-        + " from a sexual assault survivor's story. The scene of her perpetrator's sentencing hearing appears at the beginning, middle and end of the article to help frame how imperative these resources are for crime victims.",
+        + " from a sexual assault survivor's story. The scene of her perpetrator's sentencing hearing appears at the beginning, middle and end of the article to help frame how imperative"
+        + " these resources are for crime victims.\n\n Effects of changing state drug regulations:\n"
+        + "In 2023, a new criminal drug possession statute went into effect statewide after previous COVID-19 restrictions and the Blake decision ruled prior state regulations were unconstitutional."
+        + " This left local law enforcement with limited guidance and means to execute drug enforcement during the early 2020s. At the same time, Washington experienced a leap in overdoses due to the"
+        + " national fentanyl crisis and rise of other opioids. This article tackled a very controversial issue due to mass incarceration and racial discrimination concerns with heavier drug enforcement."
+        + " Instead of following the media's tendency to focus on that polarization, it highlighted how local agencies are working together to minimize overdoses. Taking a page from solutions journalism"
+        + " reporting methods, it included perspectives from police officers in Bremerton (where overdoses/public drug use is most prevalent in the county), the executive director of Washington Association"
+        + " of Sheriffs and Police Chiefs and local substance abuse treatment providers and the work they're doing. This story involved a lot of data and statistics such as Bremerton Police Department's"
+        + " number of drug arrests, WASPC's report of statewide drug arrest totals, drug overdose statistics statewide and at the county level, etc. All the facts were presented with appropriate context"
+        + " and analysis from officials to explain their significance.",
         shortDescription: "Crime focused stories supported by in-depth research, augmented by relevant statistics, without compromising essential details of situations.",
         date: "2025-01-02",
         type: "Analytical Crime Stories",
@@ -39,8 +48,9 @@ export const writtenWorkSpecifics = [
         thumbnail: "/written-work/bremerton-pd.jpg",
         images: ["/written-work/crime-march.jpg", "/written-work/bremerton-pd.jpg"],
         tiktoks: [],
-        linkTitles: ["Bremerton PD emphasizing drug arrests again"],
-        links: ["https://www.kitsapsun.com/story/news/2025/05/18/washington-drug-law-change-leading-to-more-arrests-treatment-referrals/82519745007/"]
+        linkTitles: ["Multiple stressors now threatening support for crime victims in Washington", "Bremerton PD emphasizing drug arrests again"],
+        links: ["https://www.kitsapsun.com/story/news/2025/01/18/programs-to-assist-victims-of-crime-in-washington-under-further-stress/76601518007/",
+             "https://www.kitsapsun.com/story/news/2025/05/18/washington-drug-law-change-leading-to-more-arrests-treatment-referrals/82519745007/"]
     },
     {
         id: 3,

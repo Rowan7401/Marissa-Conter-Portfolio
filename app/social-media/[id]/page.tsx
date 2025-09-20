@@ -23,7 +23,7 @@ export default function ProjectPage({ params }: Props) {
       <Navigation />
 
       <div className="p-6 mx-auto mt-24">
-        <div className="w-[95vw] md:w-[70vw] bg-white/80 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-200 animate-in fade-in slide-in-from-bottom duration-700">
+        <div className="w-[95vw] md:w-[70vw] bg-white/80 backdrop-blur-lg shadow-2xl p-8 border border-gray-200 animate-in fade-in slide-in-from-bottom duration-700">
           {/* Title & Date */}
           <div className="text-center mb-8">
             <h1 className="text-4xl lg:text-5xl font-bold mb-3 text-gray-900">
