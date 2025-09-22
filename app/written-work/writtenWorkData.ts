@@ -14,7 +14,7 @@ export const writtenWorkSpecifics = [
         type: "Natural Disaster Articles",
         duration: "7 Articles",
         thumbnail: "/written-work/mason-county-fires.jpg",
-        images: ["/written-work/mason-county-fires.jpg", "/written-work/hamma-fire.jpg"],
+        images: ["/written-work/mason-county-fires.jpg", "/written-work/hamm fires.jpg"],
         tiktoks: [],
         linkTitles: ["First article in fire series", "Most recent article in series"],
         links: ["https://www.kitsapsun.com/story/news/2025/07/09/toonerville-fire-spreads-near-belfair-more-evacuation-notices-mason-county/84520740007/", 
@@ -45,8 +45,8 @@ export const writtenWorkSpecifics = [
         date: "2025-01-02",
         type: "Analytical Crime Stories",
         duration: "1 Article",
-        thumbnail: "/written-work/bremerton-pd.jpg",
-        images: ["/written-work/crime-march.jpg", "/written-work/bremerton-pd.jpg"],
+        thumbnail: "/written-work/bremerton PD.jpg",
+        images: ["/written-work/crime-march.jpg", "/written-work/bremerton PD.jpg"],
         tiktoks: [],
         linkTitles: ["Multiple stressors now threatening support for crime victims in Washington", "Bremerton PD emphasizing drug arrests again"],
         links: ["https://www.kitsapsun.com/story/news/2025/01/18/programs-to-assist-victims-of-crime-in-washington-under-further-stress/76601518007/",
@@ -60,7 +60,7 @@ export const writtenWorkSpecifics = [
         + " With feature writing, there's a little more room to play with narrative elements which — as someone who got a writing minor in college — I also enjoy."
         + " This can look like playing with story structure, imagery, etc., that isn't always appropriate to use when covering news, while still making sure to provide readers with the"
         + " necessary information to understand the topic. In my opinion, features help challenge me as a writer during times when I can grow complacent in news writing.\n\n"
-        + "Vietnam Refugee's Cultural Food Businesses\n Getting to write about Duc Pham’s business and family’s story stuck with me for many reasons. That feature was my most"
+        + "Vietnam Refugee's Cultural Food Businesses:\n Getting to write about Duc Pham’s business and family’s story stuck with me for many reasons. That feature was my most"
         + " read article in May by a landslide, surpassing all the other breaking news/crime related pieces I wrote that month. It’s rare that a feature exceeds breaking news in page views,"
         + " but that’s a testament to the impact of his family’s story on our readers.\n\n"
         + "I have always enjoyed feature writing, but usually the news briefs that take me an hour or less to write up always outpace the features I write, which can admittedly be disheartening"
@@ -98,7 +98,7 @@ export const writtenWorkSpecifics = [
         id: 5,
         title: "Magenta Florence & Vista Magazine",
         description: "When I studied abroad in Florence, Italy, for a semester, I interned as a reporter for an English-speaking publication."
-        + "The first assignment I was given was to attend the media event prior to the grand opening of the renovation of the Sala del Colosso, the first room in the historic Accademia.",
+        + " The first assignment I was given was to attend the media event prior to the grand opening of the renovation of the Sala del Colosso, the first room in the historic Accademia.",
         shortDescription: "Informative news article on the grand reopening of a historic art museum in Florence, Italy.",
         date: "2022-02-09",
         type: "Informative Article",

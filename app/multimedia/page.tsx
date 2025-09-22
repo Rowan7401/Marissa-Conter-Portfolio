@@ -40,11 +40,11 @@ export default function MultimediaPage() {
       </div>
 
       {/* Project Grid */}
-      <div className="mx-auto mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-x-2 md:gap-x-24 gap-y-12 justify-items-center">
+      <div className="mx-auto mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-x-2 md:gap-x-24 gap-y-8 justify-items-center">
         {multimediaPageSpecifics.map((project) => (
           <Card
             key={project.id}
-            className="w-[20rem] md:w-[25rem] group overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 bg-white border border-gray-200 hover:-translate-y-2"
+            className="w-[20rem] md:w-[25rem] pb-2 px-4 pt-4 group overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 bg-white border border-gray-200 hover:-translate-y-2"
           >
             {/* Image Section */}
             <div className="relative w-full h-64 overflow-hidden">
@@ -90,8 +90,8 @@ export default function MultimediaPage() {
             </div>
 
             {/* Card Content */}
-            <CardContent className="ml-2 p-2 md:p-6 flex flex-col w-[95%] h-[45%]">
-              <h3 className="font-bold text-lg mb-3 text-gray-900 group-hover:text-purple-600 transition-colors line-clamp-2">
+            <CardContent className="ml-2 pb-2 mb-2 flex flex-col w-full h-[15vh]">
+              <h3 className="font-bold text-lg text-gray-900 group-hover:text-purple-600 transition-colors line-clamp-2">
                 {project.title}
               </h3>
               

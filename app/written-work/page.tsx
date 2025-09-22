@@ -37,11 +37,11 @@ export default function WrittenWorkPage() {
       </div>
 
       {/* Content Grid */}
-      <div className="mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 justify-items-center">
+      <div className="mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-8 justify-items-center">
         {writtenWorkSpecifics.map((project) => (
           <Card
             key={project.id}
-            className="w-[20rem] md:w-[25rem] group overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 bg-white border border-gray-200 hover:-translate-y-2"
+            className="w-[20rem] md:w-[25rem] pb-2 px-4 pt-4 group overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 bg-white border border-gray-200 hover:-translate-y-2"
           >
             {/* Image Section */}
             <div className="relative w-full h-64 overflow-hidden">
@@ -78,7 +78,7 @@ export default function WrittenWorkPage() {
             </div>
 
             {/* Card Content */}
-            <CardContent className="p-6 flex flex-col w-[95%] h-[45%]">
+            <CardContent className="mb-2 pb-2 flex flex-col w-full h-[15vh]">
               <h3 className="font-bold text-lg mb-3 text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2">
                 {project.title}
               </h3>
