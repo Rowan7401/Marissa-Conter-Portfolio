@@ -32,7 +32,7 @@ export function Navigation() {
 
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#0f0f0f]/95 via-[#1a1a1a]/95 to-[#0f0f0f]/95
+      className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-[#016064]/65 via-[#016064]/95 to-[#016064]/65
        backdrop-blur-md border-b-4 border-transparent"
       style={{
         borderImage:
@@ -47,7 +47,7 @@ export function Navigation() {
             href="/"
             className="flex items-center gap-3 text-2xl font-bold text-white hover:text-emerald-400 transition-colors"
           >
-            <Home className="h-7 w-7 text-emerald-400" />
+            <Home className="h-7 w-7 text-white-900" />
             Marissa Conter
           </Link>
 
@@ -61,7 +61,7 @@ export function Navigation() {
                   href={item.href}
                   className={`text-lg font-semibold transition-all duration-200 ${isActive
                       ? 'text-emerald-400 border-b-2 border-emerald-400 pb-1'
-                      : 'text-gray-300 hover:text-emerald-300'
+                      : 'text-white hover:text-emerald-300'
                     }`}
                 >
                   {item.name}
@@ -75,7 +75,7 @@ export function Navigation() {
                 onClick={() => setContactOpen(!contactOpen)}
                 className={`text-lg font-semibold transition-all ${contactOpen
                     ? 'text-emerald-400 border-b-2 border-emerald-400 pb-1'
-                    : 'text-gray-300 hover:text-emerald-300'
+                    : 'text-white hover:text-emerald-300'
                   }`}
               >
                 Contact
