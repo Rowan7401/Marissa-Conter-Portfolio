@@ -8,90 +8,104 @@ import { writtenWorkSpecifics } from "./writtenWorkData"
 
 export default function WrittenWorkPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 text-white mt-16">
+    <div className="min-h-screen bg-[#016064] text-gray-900 relative overflow-hidden">
       <Navigation />
 
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 mx-auto gap-x-12">
+      <div className="relative z-10 pt-24 pb-8 px-6">
+        <div className="max-w-7xl mx-auto">
+          
+          {/* Header Section */}
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
+            
+            {/* Back Button */}
+            <Button
+              asChild
+              variant="ghost"
+              className="font-serif text-white hover:text-emerald-200 flex items-center gap-2 mb-6 md:mb-0 w-fit"
+            >
+              <Link href="/work">
+                <ArrowLeft className="h-5 w-5" />
+                Back to My Work
+              </Link>
+            </Button>
 
-        {/* Header Row with Back Button */}
-        <Button
-          asChild
-          variant="ghost"
-          className="text-white-600 hover:text-gray-900 flex items-center w-36 gap-2 mt-4 md:mt-0 mb-1 md:mb-24 ml-0 md:ml-12"
-        >
-          <Link href="/work">
-            <ArrowLeft className="h-4 w-4" />
-            Back to My Work
-          </Link>
-        </Button>
-
-        {/* Header */}
-        <div className="md:text-left animate-in fade-in slide-in-from-bottom duration-700">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-transparent bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text font-bold ml-20 md:ml-64 mt-0 md:mt-6 mb-2 md:mb-6">
-            Written Work
-          </h1>
-          <p className="text-lg text-gray-600 md:max-w-[75%] max-w-[97%] leading-relaxed text-white text-center ml-1 md:ml-8">
-            Over the past five years producing written journalistic content, I have created stories of varied subject matter and purposes at various publications.
-          </p>
-        </div>
-      </div>
-
-      {/* Content Grid */}
-      <div className="mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-8 justify-items-center">
-        {writtenWorkSpecifics.map((project) => (
-          <Card
-            key={project.id}
-            className="w-[20rem] md:w-[25rem] pb-2 px-4 pt-4 group overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500 bg-white border border-gray-200 hover:-translate-y-2"
-          >
-            {/* Image Section */}
-            <div className="relative w-full h-64 overflow-hidden">
-              <Image
-                src={project.thumbnail}
-                alt={project.title}
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-700"
-              />
-
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-
-              {/* Type Tag */}
-              <div className="absolute top-3 left-3">
-                <span className="px-3 py-1 bg-white/60 backdrop-blur-sm text-gray-800 text-xs font-semibold rounded-md shadow-sm">
-                  {project.type}
-                </span>
+            {/* Header Text */}
+            <div className="md:text-right">
+              <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-black bg-gradient-to-r from-green-200 via-teal-100 to-emerald-300 bg-clip-text text-transparent leading-tight mb-4">
+                Written Work
+              </h1>
+              
+              {/* Decorative flourish */}
+              <div className="flex items-center md:justify-end gap-4 mb-4">
+                <div className="w-16 h-0.5 bg-gradient-to-r from-emerald-400 to-teal-400"></div>
+                <div className="w-2 h-2 bg-gradient-to-r from-emerald-300 to-teal-300 rounded-full"></div>
+                <div className="w-20 h-0.5 bg-gradient-to-r from-emerald-400 to-teal-400"></div>
               </div>
 
-              {/* Meta Info: Date & Duration */}
-              <div className="absolute bottom-3 left-3 flex items-center gap-2 bg-white/60 backdrop-blur-sm px-2 py-1 rounded-md text-xs font-medium text-gray-800">
-                <Calendar className="h-4 w-4" />
-                {new Date(project.date).toLocaleDateString("en-US", {
-                  month: "short",
-                  day: "numeric",
-                  year: "numeric",
-                })}
-              </div>
-              <div className="absolute bottom-3 right-3 flex items-center gap-2 bg-white/60 backdrop-blur-sm px-2 py-1 rounded-md text-xs font-medium text-gray-800">
-                <Clock className="h-4 w-4" />
-                {project.duration}
-              </div>
+              <p className="font-serif text-lg text-white leading-relaxed max-w-2xl md:ml-auto">
+                Over the past five years producing written journalistic content, I have created stories of varied subject matter and purposes at various publications.
+              </p>
             </div>
+          </div>
 
-            {/* Card Content */}
-            <CardContent className="mb-2 pb-2 flex flex-col w-full h-[15vh]">
-              <h3 className="font-bold text-lg mb-3 text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2">
-                {project.title}
-              </h3>
-        
-              <Button
-                asChild
-                className="mt-auto w-full bg-gradient-to-r from-blue-500 to-indigo-500 text-white hover:shadow-lg transition-shadow"
+          {/* Content Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            {writtenWorkSpecifics.map((project) => (
+              <div
+                key={project.id}
+                className="group bg-gradient-to-r from-emerald-500/30 to-teal-400/30 backdrop-blur-sm rounded-lg border border-emerald-400/50 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden"
               >
-                <Link href={`/written-work/${project.id}`}>View Article</Link>
-              </Button>
-            </CardContent>
-          </Card>
-        ))}
+                {/* Image Section */}
+                <div className="relative w-full h-64 overflow-hidden">
+                  <Image
+                    src={project.thumbnail}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700 contrast-110"
+                  />
+
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/60 via-transparent to-transparent" />
+
+                  {/* Type Tag */}
+                  <div className="absolute top-3 left-3">
+                    <span className="px-3 py-2 bg-white/90 backdrop-blur-sm text-gray-900 text-sm font-serif font-bold rounded shadow-md">
+                      {project.type}
+                    </span>
+                  </div>
+
+                  {/* Meta Info: Date & Duration */}
+                  <div className="absolute bottom-3 left-3 flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded text-xs font-serif font-semibold text-gray-900">
+                    <Calendar className="h-4 w-4" />
+                    {new Date(project.date).toLocaleDateString("en-US", {
+                      month: "short",
+                      day: "numeric",
+                      year: "numeric",
+                    })}
+                  </div>
+                  <div className="absolute bottom-3 right-3 flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded text-xs font-serif font-semibold text-gray-900">
+                    <Clock className="h-4 w-4" />
+                    {project.duration}
+                  </div>
+                </div>
+
+                {/* Card Content */}
+                <div className="p-6 flex flex-col">
+                  <h3 className="font-serif font-bold text-xl text-white mb-4 line-clamp-2 min-h-[3.5rem]">
+                    {project.title}
+                  </h3>
+                  
+                  <Button
+                    asChild
+                    className="mt-auto w-full font-serif text-lg font-semibold h-12 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-green-400 hover:to-emerald-400 text-white border-2 border-emerald-300 shadow-lg rounded transform hover:scale-105 transition-all duration-300"
+                  >
+                    <Link href={`/written-work/${project.id}`}>View Article</Link>
+                  </Button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )
