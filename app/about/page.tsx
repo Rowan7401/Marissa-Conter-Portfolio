@@ -56,7 +56,7 @@ export default function AboutPage() {
                 </a>
               </Button>
               <Button className="font-serif text-lg font-semibold h-14 px-8 border-2 border-emerald-300 bg-gradient-to-r from-emerald-400 to-teal-500 text-white hover:bg-emerald-300/30 shadow-lg rounded transform hover:scale-105 transition-all duration-300">
-                <Link href="https://www.kitsapsun.com/search/?q=marissa+conter">
+                <Link href="https://www.kitsapsun.com/search/?q=marissa+conter" target="blank" rel="noopener noreferrer" >
                   View My Kitsap Sun Work
                 </Link>
               </Button>
