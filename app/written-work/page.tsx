@@ -31,7 +31,7 @@ export default function WrittenWorkPage() {
 
             {/* Header Text */}
             <div className="md:text-right">
-              <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-black bg-gradient-to-r from-green-200 via-teal-100 to-emerald-300 bg-clip-text text-transparent leading-tight mb-4">
+              <h1 className="font-serif text-xl md:text-3xl lg:text-5xl font-black bg-gradient-to-r from-green-200 via-teal-100 to-emerald-300 bg-clip-text text-transparent leading-tight mb-4">
                 Written Work
               </h1>
               
@@ -42,7 +42,7 @@ export default function WrittenWorkPage() {
                 <div className="w-20 h-0.5 bg-gradient-to-r from-emerald-400 to-teal-400"></div>
               </div>
 
-              <p className="font-serif text-lg text-white leading-relaxed max-w-2xl md:ml-auto">
+              <p className="font-serif text-md md:text-lg text-white leading-relaxed max-w-2xl md:ml-auto">
                 Over the past five years producing written journalistic content, I have created stories of varied subject matter and purposes at various publications.
               </p>
             </div>

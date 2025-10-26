@@ -62,7 +62,7 @@ export default function ProjectPage({ params }: Props) {
                         <img
                           src={imgSrc}
                           alt={`${project.title} image ${index + 1}`}
-                          className="relative object-cover w-112 h-96 rounded-lg shadow-lg group-hover:scale-105 transition-transform duration-500 contrast-110"
+                          className="relative object-cover w-112 h-64 md:h-96 rounded-lg shadow-lg group-hover:scale-105 transition-transform duration-500 contrast-110"
                         />
                       </div>
                     )
@@ -90,7 +90,7 @@ export default function ProjectPage({ params }: Props) {
             )}
 
             {/* Description */}
-            <div className="bg-white/90 backdrop-blur-sm rounded-lg p-8 mb-10 shadow-lg">
+            <div className="bg-white/90 backdrop-blur-sm rounded-lg p-2 md:p-8 mb-10 shadow-lg">
               <p className="font-serif text-gray-800 text-lg leading-relaxed">
                 {project.description}
               </p>
@@ -120,7 +120,7 @@ export default function ProjectPage({ params }: Props) {
               {prevId ? (
                 <Link
                   href={`/multimedia/${prevId}`}
-                  className="font-serif text-base md:text-lg font-semibold px-5 py-3 bg-white/90 text-gray-800 hover:bg-white rounded shadow-md hover:scale-105 transition-transform flex items-center gap-2"
+                  className="font-serif text-base text-sm md:text-lg font-semibold px-1 md:px-5 py-3 bg-white/90 text-gray-800 hover:bg-white rounded shadow-md hover:scale-105 transition-transform flex items-center gap-2"
                 >
                   <ArrowLeft className="h-5 w-5" />
                   <span className="hidden md:inline">Previous Project</span>
@@ -133,7 +133,7 @@ export default function ProjectPage({ params }: Props) {
               {/* Return to My Work */}
               <Link
                 href="/multimedia"
-                className="font-serif text-base md:text-lg font-semibold px-5 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-green-400 hover:to-emerald-400 text-white border-2 border-emerald-300 rounded shadow-lg hover:scale-105 transition-all duration-300"
+                className="font-serif text-base text-sm md:text-lg font-semibold px-1 md:px-5 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-green-400 hover:to-emerald-400 text-white border-2 border-emerald-300 rounded shadow-lg hover:scale-105 transition-all duration-300"
               >
                 <span className="hidden md:inline">Return to Multimedia</span>
                 <span className="md:hidden">Back</span>
@@ -143,7 +143,7 @@ export default function ProjectPage({ params }: Props) {
               {nextId ? (
                 <Link
                   href={`/multimedia/${nextId}`}
-                  className="font-serif text-base md:text-lg font-semibold px-5 py-3 bg-white/90 text-gray-800 hover:bg-white rounded shadow-md hover:scale-105 transition-transform flex items-center gap-2"
+                  className="font-serif text-base text-sm md:text-lg font-semibold px-1 md:px-5 py-3 bg-white/90 text-gray-800 hover:bg-white rounded shadow-md hover:scale-105 transition-transform flex items-center gap-2"
                 >
                   <span className="hidden md:inline">Next Project</span>
                   <span className="md:hidden">Next</span>

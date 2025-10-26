@@ -31,7 +31,7 @@ export default function SocialMediaPage() {
 
             {/* Header Text */}
             <div className="md:text-right">
-              <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-black bg-gradient-to-r from-green-200 via-teal-100 to-emerald-300 bg-clip-text text-transparent leading-tight mb-4">
+              <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-black bg-gradient-to-r from-green-200 via-teal-100 to-emerald-300 bg-clip-text text-transparent leading-tight mb-4">
                 Social Media Content
               </h1>
               
@@ -42,7 +42,7 @@ export default function SocialMediaPage() {
                 <div className="w-20 h-0.5 bg-gradient-to-r from-emerald-400 to-teal-400"></div>
               </div>
 
-              <p className="font-serif text-lg text-white leading-relaxed max-w-2xl md:ml-auto">
+              <p className="font-serif text-md md:text-lg text-white leading-relaxed max-w-2xl md:ml-auto">
                 As editor of my school newspaper, I was responsible for creating posts on Instagram, Twitter/X and Facebook for each article. I was also responsible for posting articles on our newspaper's website.
               </p>
             </div>
