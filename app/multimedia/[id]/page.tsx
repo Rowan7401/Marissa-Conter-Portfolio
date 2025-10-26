@@ -1,13 +1,34 @@
+"use client";
+
 import { multimediaPageSpecifics } from "../multimediaData";
 import Link from "next/link";
 import { Navigation } from "@/components/navigation";
 import { ArrowLeft, ArrowRight, ExternalLink, Calendar } from "lucide-react";
+import { useRef, useState, useEffect } from "react";
 
 interface Props {
   params: { id: string };
 }
 
 export default function ProjectPage({ params }: Props) {
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const container = scrollRef.current;
+    if (!container) return;
+
+    const handleScroll = () => {
+      const scrollPosition = container.scrollLeft;
+      const width = container.clientWidth;
+      const newIndex = Math.round(scrollPosition / width);
+      setActiveIndex(newIndex);
+    };
+
+    container.addEventListener("scroll", handleScroll);
+    return () => container.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const projectId = parseInt(params.id, 10);
   const project = multimediaPageSpecifics.find((p) => p.id === projectId);
 
@@ -52,21 +73,75 @@ export default function ProjectPage({ params }: Props) {
             </div>
 
             {/* Images Section */}
-            {project.images && project.images.length > 0 && (
-              <div className="flex justify-center items-center gap-6 flex-wrap mb-10">
-                {project.images.map(
-                  (imgSrc, index) =>
-                    imgSrc && (
-                      <div key={index} className="relative group">
-                        <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-lg opacity-50 group-hover:opacity-100 transition-opacity"></div>
-                        <img
-                          src={imgSrc}
-                          alt={`${project.title} image ${index + 1}`}
-                          className="relative object-cover w-112 h-64 md:h-96 rounded-lg shadow-lg group-hover:scale-105 transition-transform duration-500 contrast-110"
-                        />
-                      </div>
-                    )
-                )}
+            {project.images?.length > 0 && (
+              <div>
+                {/* Desktop / Tablet Layout */}
+                <div className="hidden md:flex justify-center items-center gap-6 flex-wrap mb-10">
+                  {project.images.map(
+                    (imgSrc, index) =>
+                      imgSrc && (
+                        <div key={index} className="relative group">
+                          <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-lg opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                          <img
+                            src={imgSrc}
+                            alt={`${project.title} image ${index + 1}`}
+                            className="relative object-cover w-112 h-64 md:h-96 rounded-lg shadow-lg group-hover:scale-105 transition-transform duration-500 contrast-110"
+                          />
+                        </div>
+                      )
+                  )}
+                </div>
+
+                {/* Mobile Carousel */}
+                <div className="block md:hidden mb-10">
+                  {/* Scrollable Track */}
+                  <div
+                    ref={scrollRef}
+                    className="flex snap-x snap-mandatory overflow-x-auto scroll-smooth gap-4 pb-4 no-scrollbar"
+                  >
+                    {project.images.map(
+                      (imgSrc, index) =>
+                        imgSrc && (
+                          <div
+                            key={index}
+                            className="flex-shrink-0 snap-center w-full px-4"
+                            style={{ scrollSnapAlign: "center" }}
+                          >
+                            <div className="relative group">
+                              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-lg opacity-40 group-hover:opacity-70 transition-opacity"></div>
+                              <img
+                                src={imgSrc}
+                                alt={`${project.title} image ${index + 1}`}
+                                className="relative object-cover w-full h-64 rounded-lg shadow-lg contrast-110"
+                              />
+                            </div>
+                          </div>
+                        )
+                    )}
+                  </div>
+
+                  {/* Dots */}
+                  <div className="flex justify-center mt-3 gap-3">
+                    {project.images.map((_, i) => (
+                      <button
+                        key={i}
+                        onClick={() => {
+                          if (scrollRef.current) {
+                            scrollRef.current.scrollTo({
+                              left: scrollRef.current.clientWidth * i,
+                              behavior: "smooth",
+                            });
+                          }
+                        }}
+                        className={`h-3 w-3 rounded-full border border-emerald-300 transition-all duration-300 ${activeIndex === i
+                            ? "bg-emerald-400 scale-110 shadow-[0_0_6px_rgba(16,185,129,0.8)]"
+                            : "bg-emerald-800/40 hover:bg-emerald-400/60"
+                          }`}
+                      ></button>
+                    ))}
+                  </div>
+
+                </div>
               </div>
             )}
 
