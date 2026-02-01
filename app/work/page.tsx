@@ -24,10 +24,6 @@ export default function WorkPage() {
             <div className="w-2 h-2 bg-gradient-to-r from-emerald-300 to-teal-300 rounded-full"></div>
             <div className="w-20 h-0.5 bg-gradient-to-r from-emerald-400 to-teal-400"></div>
           </div>
-
-          <p className="font-serif text-xl text-white italic">
-            Explore my portfolio across multimedia, social media, and written journalism
-          </p>
         </div>
       </section>
 
@@ -64,6 +60,35 @@ export default function WorkPage() {
             </div>
           </Link> 
 
+          {/* Written Work Card */}
+          <Link href="/written-work" className="block group">
+            <div className="bg-gradient-to-r from-emerald-500/30 to-teal-400/30 backdrop-blur-sm rounded-lg border border-emerald-400/50 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden">
+              <div className="aspect-video relative overflow-hidden">
+                <Image
+                  src="/written-work/writtenWorkCardIcon.png"
+                  alt="Written Journalism Work"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-700 contrast-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-emerald-800/60 via-transparent to-transparent" />
+              </div>
+              <div className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-3 bg-gradient-to-r from-emerald-500 to-teal-500 rounded border-2 border-emerald-300">
+                    <PenTool className="h-6 w-6 text-white" />
+                  </div>
+                  <span className="font-serif text-xl text-white font-bold">
+                    WRITTEN WORK
+                  </span>
+                </div>
+                <h3 className="font-serif font-bold text-xl text-white mb-2">
+                  In-Depth Reporting
+                </h3>
+                <div className="w-12 h-0.5 bg-gradient-to-r from-emerald-400 to-teal-400 mt-3"></div>
+              </div>
+            </div>
+          </Link>
+          
           {/* Social Media Card */}
           <Link href="/social-media" className="block group">
             <div className="bg-gradient-to-r from-emerald-500/30 to-teal-400/30 backdrop-blur-sm rounded-lg border border-emerald-400/50 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden">
@@ -93,34 +118,6 @@ export default function WorkPage() {
             </div>
           </Link>
 
-          {/* Written Work Card */}
-          <Link href="/written-work" className="block group">
-            <div className="bg-gradient-to-r from-emerald-500/30 to-teal-400/30 backdrop-blur-sm rounded-lg border border-emerald-400/50 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden">
-              <div className="aspect-video relative overflow-hidden">
-                <Image
-                  src="/written-work/writtenWorkCardIcon.png"
-                  alt="Written Journalism Work"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700 contrast-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-emerald-800/60 via-transparent to-transparent" />
-              </div>
-              <div className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="p-3 bg-gradient-to-r from-emerald-500 to-teal-500 rounded border-2 border-emerald-300">
-                    <PenTool className="h-6 w-6 text-white" />
-                  </div>
-                  <span className="font-serif text-xl text-white font-bold">
-                    WRITTEN WORK
-                  </span>
-                </div>
-                <h3 className="font-serif font-bold text-xl text-white mb-2">
-                  In-Depth Reporting
-                </h3>
-                <div className="w-12 h-0.5 bg-gradient-to-r from-emerald-400 to-teal-400 mt-3"></div>
-              </div>
-            </div>
-          </Link>
         </div>
       </section>
     </div>
