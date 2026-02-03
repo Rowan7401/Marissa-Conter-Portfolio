@@ -87,7 +87,7 @@ export default function EarthyHeroDesign() {
                   STAFF REPORTER
                 </h2>
                 <p className="font-serif italic text-white font-semibold text-sm sm:text-md mt-1">
-                  A Gannett Publication • Established 1889
+                  A USA Today Publication • Established 1889
                 </p>
               </div>
 

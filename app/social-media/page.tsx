@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowLeft, Calendar, Clock } from "lucide-react"
+import { ArrowLeft, ArrowRight, Calendar, Clock } from "lucide-react"
 import { socialMediaSpecifics } from "./socialMediaData"
 
 export default function SocialMediaPage() {
@@ -13,10 +13,10 @@ export default function SocialMediaPage() {
 
       <div className="relative z-10 pt-24 pb-8 px-6">
         <div className="max-w-7xl mx-auto">
-          
+
           {/* Header Section */}
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
-            
+
             {/* Back Button */}
             <Button
               asChild
@@ -34,7 +34,7 @@ export default function SocialMediaPage() {
               <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-black bg-gradient-to-r from-green-200 via-teal-100 to-emerald-300 bg-clip-text text-transparent leading-tight mb-4">
                 Social Media Content
               </h1>
-              
+
               {/* Decorative flourish */}
               <div className="flex items-center md:justify-end gap-4 mb-4">
                 <div className="w-16 h-0.5 bg-gradient-to-r from-emerald-400 to-teal-400"></div>
@@ -51,9 +51,10 @@ export default function SocialMediaPage() {
           {/* Content Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {socialMediaSpecifics.map((project) => (
-              <div
+              <Link
+                href={`/social-media/${project.id}`}
                 key={project.id}
-                className="group bg-gradient-to-r from-emerald-500/30 to-teal-400/30 backdrop-blur-sm rounded-lg border border-emerald-400/50 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 overflow-hidden"
+                className="group block bg-gradient-to-r from-emerald-500/30 to-teal-400/30 backdrop-blur-sm rounded-lg border border-emerald-400/50 shadow-lg hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 overflow-hidden cursor-pointer"
               >
                 {/* Image Section */}
                 <div className="relative w-full h-64 overflow-hidden">
@@ -94,15 +95,13 @@ export default function SocialMediaPage() {
                   <h3 className="font-serif font-bold text-xl text-white mb-4 line-clamp-2 min-h-[3.5rem]">
                     {project.title}
                   </h3>
-                  
-                  <Button
-                    asChild
-                    className="mt-auto w-full font-serif text-lg font-semibold h-12 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-green-400 hover:to-emerald-400 text-white border-2 border-emerald-300 shadow-lg rounded transform hover:scale-105 transition-all duration-300"
-                  >
-                    <Link href={`/social-media/${project.id}`}>View Project</Link>
-                  </Button>
+
+                  {/* "Click to View" Hint */}
+                  <div className="mt-4 flex items-center text-emerald-300 font-bold font-serif text-sm group-hover:translate-x-2 transition-transform">
+                    View Project <ArrowRight className="ml-2 h-4 w-4" />
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

@@ -72,6 +72,23 @@ export default function ProjectPage({ params }: Props) {
               </div>
             </div>
 
+            {/* --- VIDEO SECTION --- */}
+            {project.videoUrl && (
+              <div className="relative mb-10 group">
+                <div className="absolute -inset-1.5 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-xl opacity-50 group-hover:opacity-100 transition-opacity blur-sm"></div>
+                <div className="relative overflow-hidden rounded-lg shadow-2xl bg-black aspect-video flex items-center justify-center">
+                  <video
+                    src={project.videoUrl}
+                    controls
+                    autoPlay
+                    muted
+                    playsInline
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+            )}
+
             {/* Images Section */}
             {project.images?.length > 0 && (
               <div>
