@@ -43,7 +43,7 @@ export default function WrittenWorkPage() {
               </div>
 
               <p className="font-serif text-md md:text-lg text-white leading-relaxed max-w-2xl md:ml-auto">
-                Over the past five years producing written journalistic content, I have created stories of varied subject matter and purposes at various publications.
+                Over the past five years producing journalistic content, I have written stories of various topics at multiple publications.
               </p>
             </div>
           </div>
